@@ -121,3 +121,16 @@ model Dummy {
   json    Json?
   friends String[]
 }
+
+model Academic {
+  id                  Int                  @id @default(autoincrement())  
+  institute           String
+  passingDate         DateTime             @map("passing_date") @db.Date
+  duration            Int
+  total               Int
+  obtained            Decimal              @db.Decimal(6, 3)
+  percentage          Decimal              @default(dbgenerated()) @db.Decimal(6, 3)
+  division            Int                  @default(dbgenerated())
+  
+  @@map("academic")
+}
