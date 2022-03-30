@@ -6,15 +6,15 @@ import { TagCount } from './tag-count.output';
 
 @ObjectType()
 export class Tag {
-    @Field(() => ID, { nullable: false })
+    @Field(() => ID, {    nullable:    false    })
     id!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {    nullable:    false    })
     name!: string;
 
-    @Field(() => [Article], { nullable: true })
+    @Field(() => [Article], {    nullable:   tru e  })
     articles?: Array<Article>;
 
-    @Field(() => TagCount, { nullable: false })
+    @Field(() => TagCount, {    nullable:    fals e   })
     _count?: TagCount;
 }

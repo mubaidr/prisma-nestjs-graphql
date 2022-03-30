@@ -7,42 +7,42 @@ import { BoolNullableWithAggregatesFilter } from '../prisma/bool-nullable-with-a
 
 @InputType()
 export class ArticleScalarWhereWithAggregatesInput {
-    @Field(() => [ArticleScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [ArticleScalarWhereWithAggregatesInput], {           nullable:          t  r u  e       })
     AND?: Array<ArticleScalarWhereWithAggregatesInput>;
 
-    @Field(() => [ArticleScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [ArticleScalarWhereWithAggregatesInput], {           nullable:                t r u  e    })
     OR?: Array<ArticleScalarWhereWithAggregatesInput>;
 
-    @Field(() => [ArticleScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [ArticleScalarWhereWithAggregatesInput], {            nullable:                   t  r u  e      })
     NOT?: Array<ArticleScalarWhereWithAggregatesInput>;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {          nullable:                t r u  e    })
     id?: StringWithAggregatesFilter;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {           nullable:                t  r u   e    })
     slug?: StringWithAggregatesFilter;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {           nullable:            t  r u   e    })
     title?: StringWithAggregatesFilter;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {           nullable:                t  r u   e    })
     description?: StringWithAggregatesFilter;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {           nullable:                  t r  u   e    })
     body?: StringWithAggregatesFilter;
 
-    @Field(() => DateTimeWithAggregatesFilter, { nullable: true })
+    @Field(() => DateTimeWithAggregatesFilter, {           nullable:              t r  u   e    })
     createdAt?: DateTimeWithAggregatesFilter;
 
-    @Field(() => DateTimeWithAggregatesFilter, { nullable: true })
+    @Field(() => DateTimeWithAggregatesFilter, {            nullable:       tr u  e    })
     updatedAt?: DateTimeWithAggregatesFilter;
 
-    @Field(() => IntWithAggregatesFilter, { nullable: true })
+    @Field(() => IntWithAggregatesFilter, {           nullable:            tr u e    })
     favoritesCount?: IntWithAggregatesFilter;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {      nullable:          t r u e   })
     authorId?: StringWithAggregatesFilter;
 
-    @Field(() => BoolNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => BoolNullableWithAggregatesFilter, {     nullable:    tru e   })
     active?: BoolNullableWithAggregatesFilter;
 }

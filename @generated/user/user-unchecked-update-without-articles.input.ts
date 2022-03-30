@@ -13,45 +13,44 @@ import { ProfileUncheckedUpdateOneWithoutUserInput } from '../profile/profile-un
 
 @InputType()
 export class UserUncheckedUpdateWithoutArticlesInput {
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {           nullable:       tr u e   })
     id?: StringFieldUpdateOperationsInput;
-
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {          nullable:       tru  e     })
     email?: StringFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {         nullable:       tru e      })
     name?: StringFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {        nullable:             t r  u e   })
     password?: StringFieldUpdateOperationsInput;
 
-    @Field(() => NullableStringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableStringFieldUpdateOperationsInput, {           nullable:              t  r u   e    })
     bio?: NullableStringFieldUpdateOperationsInput;
 
-    @Field(() => NullableStringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableStringFieldUpdateOperationsInput, {       nullable:       tru   e    })
     image?: NullableStringFieldUpdateOperationsInput;
 
-    @Field(() => UserUncheckedUpdateManyWithoutFollowersInput, { nullable: true })
+    @Field(() => UserUncheckedUpdateManyWithoutFollowersInput, {       nullable:       tr u e   })
     following?: UserUncheckedUpdateManyWithoutFollowersInput;
 
-    @Field(() => UserUncheckedUpdateManyWithoutFollowingInput, { nullable: true })
+    @Field(() => UserUncheckedUpdateManyWithoutFollowingInput, {       nullable:                     t r  u e   })
     followers?: UserUncheckedUpdateManyWithoutFollowingInput;
 
-    @Field(() => ArticleUncheckedUpdateManyWithoutFavoritedByInput, { nullable: true })
+    @Field(() => ArticleUncheckedUpdateManyWithoutFavoritedByInput, {      nullable:      tru  e    })
     favoriteArticles?: ArticleUncheckedUpdateManyWithoutFavoritedByInput;
 
-    @Field(() => CommentUncheckedUpdateManyWithoutAuthorInput, { nullable: true })
+    @Field(() => CommentUncheckedUpdateManyWithoutAuthorInput, {      nullable:                 t r  u e   })
     comments?: CommentUncheckedUpdateManyWithoutAuthorInput;
 
-    @Field(() => NullableIntFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableIntFieldUpdateOperationsInput, {           nullable:      tru  e    })
     countComments?: NullableIntFieldUpdateOperationsInput;
 
-    @Field(() => NullableFloatFieldUpdateOperationsInput, { nullable: true })
-    rating?: NullableFloatFieldUpdateOperationsInput;
+    @Field(() => NullableFloatFieldUpdateOperationsInput, {          nullable:                  tr  u  e    })
+    rating?:    NullableFloatFieldUpdateOperationsInput;
 
-    @Field(() => NullableEnumRoleFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableEnumRoleFieldUpdateOperationsInput, {       nullable:      tr u e    })
     role?: NullableEnumRoleFieldUpdateOperationsInput;
 
-    @Field(() => ProfileUncheckedUpdateOneWithoutUserInput, { nullable: true })
+    @Field(() => ProfileUncheckedUpdateOneWithoutUserInput, {     nullable:      t r u e   })
     profile?: ProfileUncheckedUpdateOneWithoutUserInput;
 }

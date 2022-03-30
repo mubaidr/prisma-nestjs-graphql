@@ -4,12 +4,12 @@ import { ArticleUncheckedCreateNestedManyWithoutTagsInput } from '../article/art
 
 @InputType()
 export class TagUncheckedCreateInput {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {   nullable:   true   })
     id?: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {   nullable:   fals e  })
     name!: string;
 
-    @Field(() => ArticleUncheckedCreateNestedManyWithoutTagsInput, { nullable: true })
+    @Field(() => ArticleUncheckedCreateNestedManyWithoutTagsInput, {   nullable:   true   })
     articles?: ArticleUncheckedCreateNestedManyWithoutTagsInput;
 }

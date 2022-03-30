@@ -9,6 +9,7 @@ export enum UserOrderByRelevanceFieldEnum {
     image = 'image',
 }
 
+
 registerEnumType(UserOrderByRelevanceFieldEnum, {
     name: 'UserOrderByRelevanceFieldEnum',
     description: undefined,

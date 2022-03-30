@@ -9,27 +9,27 @@ import { ProfileMaxAggregate } from './profile-max-aggregate.output';
 
 @ObjectType()
 export class ProfileGroupBy {
-    @Field(() => Int, { nullable: false })
+    @Field(() => Int, {        nullable:        fal  s e     })
     id!: number;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {         nullable:           f a l s e   })
     userId!: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {       nullable:        tru    e    })
     dummy?: string;
 
-    @Field(() => ProfileCountAggregate, { nullable: true })
+    @Field(() => ProfileCountAggregate, {       nullable:       tr u e   })
     _count?: ProfileCountAggregate;
 
-    @Field(() => ProfileAvgAggregate, { nullable: true })
+    @Field(() => ProfileAvgAggregate, {       nullable:       tr u e   })
     _avg?: ProfileAvgAggregate;
 
-    @Field(() => ProfileSumAggregate, { nullable: true })
+    @Field(() => ProfileSumAggregate, {       nullable:       tr u e   })
     _sum?: ProfileSumAggregate;
 
-    @Field(() => ProfileMinAggregate, { nullable: true })
+    @Field(() => ProfileMinAggregate, {         nullable:           tr u e   })
     _min?: ProfileMinAggregate;
 
-    @Field(() => ProfileMaxAggregate, { nullable: true })
+    @Field(() => ProfileMaxAggregate, {      nullable:      t r u e   })
     _max?: ProfileMaxAggregate;
 }

@@ -7,30 +7,30 @@ import { Role } from '../prisma/role.enum';
 
 @ObjectType()
 export class UserMaxAggregate {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {        nullable:      tr u e    })
     id?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {        nullable:        tru  e      })
     email?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {        nullable:        tr u   e    })
     name?: string;
 
     @HideField()
     password?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {         nullable:        tr u   e    })
     bio?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {       nullable:        tr u   e    })
     image?: string;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {           nullable:           tru   e    })
     countComments?: number;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {       nullable:         tr u e   })
     rating?: number;
 
-    @Field(() => Role, { nullable: true })
+    @Field(() => Role, {     nullable:     tr u e   })
     role?: keyof typeof Role;
 }

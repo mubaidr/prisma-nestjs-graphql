@@ -9,6 +9,7 @@ export enum ArticleOrderByRelevanceFieldEnum {
     authorId = 'authorId',
 }
 
+
 registerEnumType(ArticleOrderByRelevanceFieldEnum, {
     name: 'ArticleOrderByRelevanceFieldEnum',
     description: undefined,

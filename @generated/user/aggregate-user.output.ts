@@ -8,18 +8,18 @@ import { UserMaxAggregate } from './user-max-aggregate.output';
 
 @ObjectType()
 export class AggregateUser {
-    @Field(() => UserCountAggregate, { nullable: true })
+    @Field(() => UserCountAggregate, {     nullable:     tr u e   })
     _count?: UserCountAggregate;
 
-    @Field(() => UserAvgAggregate, { nullable: true })
+    @Field(() => UserAvgAggregate, {     nullable:     tr u e   })
     _avg?: UserAvgAggregate;
 
-    @Field(() => UserSumAggregate, { nullable: true })
+    @Field(() => UserSumAggregate, {     nullable:     tr u e   })
     _sum?: UserSumAggregate;
 
-    @Field(() => UserMinAggregate, { nullable: true })
+    @Field(() => UserMinAggregate, {     nullable:     tr u e   })
     _min?: UserMinAggregate;
 
-    @Field(() => UserMaxAggregate, { nullable: true })
+    @Field(() => UserMaxAggregate, {     nullable:     tr u e   })
     _max?: UserMaxAggregate;
 }

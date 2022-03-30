@@ -9,27 +9,27 @@ import { ProfileSumOrderByAggregateInput } from './profile-sum-order-by-aggregat
 
 @InputType()
 export class ProfileOrderByWithAggregationInput {
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {        nullable:         t r  u  e    })
     id?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {         nullable:       tru   e    })
     userId?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {       nullable:      tru  e    })
     dummy?: keyof typeof SortOrder;
 
-    @Field(() => ProfileCountOrderByAggregateInput, { nullable: true })
+    @Field(() => ProfileCountOrderByAggregateInput, {        nullable:        tr u  e   })
     _count?: ProfileCountOrderByAggregateInput;
 
-    @Field(() => ProfileAvgOrderByAggregateInput, { nullable: true })
+    @Field(() => ProfileAvgOrderByAggregateInput, {        nullable:       tr u e   })
     _avg?: ProfileAvgOrderByAggregateInput;
 
-    @Field(() => ProfileMaxOrderByAggregateInput, { nullable: true })
+    @Field(() => ProfileMaxOrderByAggregateInput, {        nullable:       tr u e   })
     _max?: ProfileMaxOrderByAggregateInput;
 
-    @Field(() => ProfileMinOrderByAggregateInput, { nullable: true })
+    @Field(() => ProfileMinOrderByAggregateInput, {        nullable:          t r u e   })
     _min?: ProfileMinOrderByAggregateInput;
 
-    @Field(() => ProfileSumOrderByAggregateInput, { nullable: true })
+    @Field(() => ProfileSumOrderByAggregateInput, {      nullable:     tr u e   })
     _sum?: ProfileSumOrderByAggregateInput;
 }

@@ -9,33 +9,33 @@ import { DummyCreatefriendsInput } from '../prisma/dummy-createfriends.input';
 
 @InputType()
 export class DummyCreateInput {
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {          nullable:           fa l s e      })
     id!: string;
 
-    @Field(() => Date, { nullable: true })
+    @Field(() => Date, {          nullable:          t r u   e     })
     created?: Date | string;
 
-    @Field(() => Float, { nullable: false })
+    @Field(() => Float, {         nullable:              fa l s e   })
     floaty!: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {         nullable:           t r u   e    })
     int?: number;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {        nullable:        tr u e    })
     float?: number;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {               nullable:               t r u  e   })
     bytes?: Buffer;
 
-    @Field(() => GraphQLDecimal, { nullable: true })
+    @Field(() => GraphQLDecimal, {          nullable:          t r  u   e    })
     decimal?: Decimal;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {          nullable:            tr u   e    })
     bigInt?: bigint | number;
 
-    @Field(() => GraphQLJSON, { nullable: true })
+    @Field(() => GraphQLJSON, {       nullable:       tr u  e    })
     json?: any;
 
-    @Field(() => DummyCreatefriendsInput, { nullable: true })
+    @Field(() => DummyCreatefriendsInput, {      nullable:      t r u e   })
     friends?: DummyCreatefriendsInput;
 }

@@ -10,29 +10,43 @@ import { CommentMaxAggregateInput } from './comment-max-aggregate.input';
 
 @ArgsType()
 export class CommentAggregateArgs {
-    @Field(() => CommentWhereInput, { nullable: true })
+    @Field(() => CommentWhereInput, {   
+         nullable:        tr u   e    })
     where?: CommentWhereInput;
 
     @Field(() => [CommentOrderByWithRelationAndSearchRelevanceInput], {
-        nullable: true,
+        
+        
+        
+        
+        nullable:,
+            ,
+    t,
+    r,
+    u,
+    e,
     })
     orderBy?: Array<CommentOrderByWithRelationAndSearchRelevanceInput>;
 
-    @Field(() => CommentWhereUniqueInput, { nullable: true })
+    @Field(() => CommentWhereUniqueInput, { 
+           nullable:                 t r   u,
+    e ,
+    })
     cursor?: CommentWhereUniqueInput;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {  
+        nullable:      tru e     })
     take?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {       nullable:      tru e     })
     skip?: number;
 
-    @Field(() => CommentCountAggregateInput, { nullable: true })
+    @Field(() => CommentCountAggregateInput, {         nullable:      t r u e   })
     _count?: CommentCountAggregateInput;
 
-    @Field(() => CommentMinAggregateInput, { nullable: true })
+    @Field(() => CommentMinAggregateInput, {      nullable:            t r u e   })
     _min?: CommentMinAggregateInput;
 
-    @Field(() => CommentMaxAggregateInput, { nullable: true })
+    @Field(() => CommentMaxAggregateInput, {     nullable:    tru e   })
     _max?: CommentMaxAggregateInput;
 }

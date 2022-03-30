@@ -9,51 +9,51 @@ import { UserOrderByRelevanceInput } from './user-order-by-relevance.input';
 
 @InputType()
 export class UserOrderByWithRelationAndSearchRelevanceInput {
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {         nullable:          t r u   e     })
     id?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:                    t r   u    e      })
     email?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:       tru  e     })
     name?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:                  t r  u  e   })
     password?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:                 t r u  e     })
     bio?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {      nullable:      tru  e    })
     image?: keyof typeof SortOrder;
 
-    @Field(() => UserOrderByRelationAggregateInput, { nullable: true })
+    @Field(() => UserOrderByRelationAggregateInput, {           nullable:           t r  u e   })
     following?: UserOrderByRelationAggregateInput;
 
-    @Field(() => UserOrderByRelationAggregateInput, { nullable: true })
+    @Field(() => UserOrderByRelationAggregateInput, {          nullable:                   t r   u  e   })
     followers?: UserOrderByRelationAggregateInput;
 
-    @Field(() => ArticleOrderByRelationAggregateInput, { nullable: true })
+    @Field(() => ArticleOrderByRelationAggregateInput, {           nullable:             t r u   e    })
     favoriteArticles?: ArticleOrderByRelationAggregateInput;
 
-    @Field(() => ArticleOrderByRelationAggregateInput, { nullable: true })
+    @Field(() => ArticleOrderByRelationAggregateInput, {        nullable:                  t r  u   e    })
     articles?: ArticleOrderByRelationAggregateInput;
 
-    @Field(() => CommentOrderByRelationAggregateInput, { nullable: true })
+    @Field(() => CommentOrderByRelationAggregateInput, {              nullable:         t  r  u  e   })
     comments?: CommentOrderByRelationAggregateInput;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {        nullable:            t r  u   e    })
     countComments?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {               nullable:               t r  u e   })
     rating?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {     nullable:              tr u   e    })
     role?: keyof typeof SortOrder;
 
-    @Field(() => ProfileOrderByWithRelationAndSearchRelevanceInput, { nullable: true })
+    @Field(() => ProfileOrderByWithRelationAndSearchRelevanceInput, {       nullable:        tr u e    })
     profile?: ProfileOrderByWithRelationAndSearchRelevanceInput;
 
-    @Field(() => UserOrderByRelevanceInput, { nullable: true })
+    @Field(() => UserOrderByRelevanceInput, {    nullable:    tru e   })
     _relevance?: UserOrderByRelevanceInput;
 }

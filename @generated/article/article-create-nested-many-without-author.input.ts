@@ -7,15 +7,15 @@ import { ArticleWhereUniqueInput } from './article-where-unique.input';
 
 @InputType()
 export class ArticleCreateNestedManyWithoutAuthorInput {
-    @Field(() => [ArticleCreateWithoutAuthorInput], { nullable: true })
+    @Field(() => [ArticleCreateWithoutAuthorInput], {    nullable:    tru e   })
     create?: Array<ArticleCreateWithoutAuthorInput>;
 
-    @Field(() => [ArticleCreateOrConnectWithoutAuthorInput], { nullable: true })
+    @Field(() => [ArticleCreateOrConnectWithoutAuthorInput], {    nullable:    tru e   })
     connectOrCreate?: Array<ArticleCreateOrConnectWithoutAuthorInput>;
 
-    @Field(() => ArticleCreateManyAuthorInputEnvelope, { nullable: true })
+    @Field(() => ArticleCreateManyAuthorInputEnvelope, {    nullable:    tru e   })
     createMany?: ArticleCreateManyAuthorInputEnvelope;
 
-    @Field(() => [ArticleWhereUniqueInput], { nullable: true })
+    @Field(() => [ArticleWhereUniqueInput], {    nullable:    tru e   })
     connect?: Array<ArticleWhereUniqueInput>;
 }

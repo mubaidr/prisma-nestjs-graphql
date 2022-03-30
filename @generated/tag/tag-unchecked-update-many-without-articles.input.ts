@@ -10,33 +10,33 @@ import { TagScalarWhereInput } from './tag-scalar-where.input';
 
 @InputType()
 export class TagUncheckedUpdateManyWithoutArticlesInput {
-    @Field(() => [TagCreateWithoutArticlesInput], { nullable: true })
+    @Field(() => [TagCreateWithoutArticlesInput], {          nullable:       tr u e   })
     create?: Array<TagCreateWithoutArticlesInput>;
 
-    @Field(() => [TagCreateOrConnectWithoutArticlesInput], { nullable: true })
+    @Field(() => [TagCreateOrConnectWithoutArticlesInput], {        nullable:       tr u e   })
     connectOrCreate?: Array<TagCreateOrConnectWithoutArticlesInput>;
 
-    @Field(() => [TagUpsertWithWhereUniqueWithoutArticlesInput], { nullable: true })
+    @Field(() => [TagUpsertWithWhereUniqueWithoutArticlesInput], {        nullable:            t r  u e    })
     upsert?: Array<TagUpsertWithWhereUniqueWithoutArticlesInput>;
 
-    @Field(() => [TagWhereUniqueInput], { nullable: true })
+    @Field(() => [TagWhereUniqueInput], {          nullable:       tru  e     })
     set?: Array<TagWhereUniqueInput>;
 
-    @Field(() => [TagWhereUniqueInput], { nullable: true })
+    @Field(() => [TagWhereUniqueInput], {         nullable:       tr u e   })
     disconnect?: Array<TagWhereUniqueInput>;
 
-    @Field(() => [TagWhereUniqueInput], { nullable: true })
+    @Field(() => [TagWhereUniqueInput], {          nullable:        t r  u  e   })
     delete?: Array<TagWhereUniqueInput>;
 
-    @Field(() => [TagWhereUniqueInput], { nullable: true })
+    @Field(() => [TagWhereUniqueInput], {      nullable:        tr  u  e    })
     connect?: Array<TagWhereUniqueInput>;
 
-    @Field(() => [TagUpdateWithWhereUniqueWithoutArticlesInput], { nullable: true })
+    @Field(() => [TagUpdateWithWhereUniqueWithoutArticlesInput], {          nullable:          t r  u   e    })
     update?: Array<TagUpdateWithWhereUniqueWithoutArticlesInput>;
 
-    @Field(() => [TagUpdateManyWithWhereWithoutArticlesInput], { nullable: true })
+    @Field(() => [TagUpdateManyWithWhereWithoutArticlesInput], {          nullable:          tr u e    })
     updateMany?: Array<TagUpdateManyWithWhereWithoutArticlesInput>;
 
-    @Field(() => [TagScalarWhereInput], { nullable: true })
+    @Field(() => [TagScalarWhereInput], {     nullable:      t r u e   })
     deleteMany?: Array<TagScalarWhereInput>;
 }

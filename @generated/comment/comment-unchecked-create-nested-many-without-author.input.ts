@@ -7,15 +7,15 @@ import { CommentWhereUniqueInput } from './comment-where-unique.input';
 
 @InputType()
 export class CommentUncheckedCreateNestedManyWithoutAuthorInput {
-    @Field(() => [CommentCreateWithoutAuthorInput], { nullable: true })
+    @Field(() => [CommentCreateWithoutAuthorInput], {    nullable:    tru e   })
     create?: Array<CommentCreateWithoutAuthorInput>;
 
-    @Field(() => [CommentCreateOrConnectWithoutAuthorInput], { nullable: true })
+    @Field(() => [CommentCreateOrConnectWithoutAuthorInput], {    nullable:    tru e   })
     connectOrCreate?: Array<CommentCreateOrConnectWithoutAuthorInput>;
 
-    @Field(() => CommentCreateManyAuthorInputEnvelope, { nullable: true })
+    @Field(() => CommentCreateManyAuthorInputEnvelope, {    nullable:    tru e   })
     createMany?: CommentCreateManyAuthorInputEnvelope;
 
-    @Field(() => [CommentWhereUniqueInput], { nullable: true })
+    @Field(() => [CommentWhereUniqueInput], {    nullable:    tru e   })
     connect?: Array<CommentWhereUniqueInput>;
 }

@@ -4,33 +4,33 @@ import { Int } from '@nestjs/graphql';
 
 @ObjectType()
 export class ArticleMaxAggregate {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {         nullable:              t r  u e    })
     id?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:             t r u  e     })
     slug?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:              t  r u   e    })
     title?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {          nullable:              t r  u   e    })
     description?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {         nullable:          t r  u   e    })
     body?: string;
 
-    @Field(() => Date, { nullable: true })
+    @Field(() => Date, {             nullable:              t r  u   e    })
     createdAt?: Date | string;
 
-    @Field(() => Date, { nullable: true })
+    @Field(() => Date, {          nullable:       tr u  e    })
     updatedAt?: Date | string;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {        nullable:          tr u e    })
     favoritesCount?: number;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {      nullable:       tr u e   })
     authorId?: string;
 
-    @Field(() => Boolean, { nullable: true })
+    @Field(() => Boolean, {      nullable:      t r u e   })
     active?: boolean;
 }

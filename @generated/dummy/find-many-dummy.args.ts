@@ -8,21 +8,21 @@ import { DummyScalarFieldEnum } from './dummy-scalar-field.enum';
 
 @ArgsType()
 export class FindManyDummyArgs {
-    @Field(() => DummyWhereInput, { nullable: true })
+    @Field(() => DummyWhereInput, {      nullable:      tru e     })
     where?: DummyWhereInput;
 
-    @Field(() => [DummyOrderByWithRelationAndSearchRelevanceInput], { nullable: true })
+    @Field(() => [DummyOrderByWithRelationAndSearchRelevanceInput], {      nullable:      tru  e    })
     orderBy?: Array<DummyOrderByWithRelationAndSearchRelevanceInput>;
 
-    @Field(() => DummyWhereUniqueInput, { nullable: true })
+    @Field(() => DummyWhereUniqueInput, {      nullable:      tru  e    })
     cursor?: DummyWhereUniqueInput;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {      nullable:      tru  e    })
     take?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {      nullable:      tru  e    })
     skip?: number;
 
-    @Field(() => [DummyScalarFieldEnum], { nullable: true })
+    @Field(() => [DummyScalarFieldEnum], {      nullable:      t r u e   })
     distinct?: Array<keyof typeof DummyScalarFieldEnum>;
 }

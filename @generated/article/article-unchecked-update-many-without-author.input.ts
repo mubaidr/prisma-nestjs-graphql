@@ -11,36 +11,36 @@ import { ArticleScalarWhereInput } from './article-scalar-where.input';
 
 @InputType()
 export class ArticleUncheckedUpdateManyWithoutAuthorInput {
-    @Field(() => [ArticleCreateWithoutAuthorInput], { nullable: true })
+    @Field(() => [ArticleCreateWithoutAuthorInput], {         nullable:       tr u e   })
     create?: Array<ArticleCreateWithoutAuthorInput>;
 
-    @Field(() => [ArticleCreateOrConnectWithoutAuthorInput], { nullable: true })
+    @Field(() => [ArticleCreateOrConnectWithoutAuthorInput], {         nullable:       tr u e   })
     connectOrCreate?: Array<ArticleCreateOrConnectWithoutAuthorInput>;
 
-    @Field(() => [ArticleUpsertWithWhereUniqueWithoutAuthorInput], { nullable: true })
+    @Field(() => [ArticleUpsertWithWhereUniqueWithoutAuthorInput], {          nullable:       tr u e   })
     upsert?: Array<ArticleUpsertWithWhereUniqueWithoutAuthorInput>;
 
-    @Field(() => ArticleCreateManyAuthorInputEnvelope, { nullable: true })
+    @Field(() => ArticleCreateManyAuthorInputEnvelope, {        nullable:             t r  u e   })
     createMany?: ArticleCreateManyAuthorInputEnvelope;
 
-    @Field(() => [ArticleWhereUniqueInput], { nullable: true })
+    @Field(() => [ArticleWhereUniqueInput], {           nullable:       tru  e     })
     set?: Array<ArticleWhereUniqueInput>;
 
-    @Field(() => [ArticleWhereUniqueInput], { nullable: true })
+    @Field(() => [ArticleWhereUniqueInput], {          nullable:       tr u e   })
     disconnect?: Array<ArticleWhereUniqueInput>;
 
-    @Field(() => [ArticleWhereUniqueInput], { nullable: true })
+    @Field(() => [ArticleWhereUniqueInput], {           nullable:         t  r   u e   })
     delete?: Array<ArticleWhereUniqueInput>;
 
-    @Field(() => [ArticleWhereUniqueInput], { nullable: true })
+    @Field(() => [ArticleWhereUniqueInput], {     nullable:              tr u e    })
     connect?: Array<ArticleWhereUniqueInput>;
 
-    @Field(() => [ArticleUpdateWithWhereUniqueWithoutAuthorInput], { nullable: true })
+    @Field(() => [ArticleUpdateWithWhereUniqueWithoutAuthorInput], {           nullable:          t r  u   e    })
     update?: Array<ArticleUpdateWithWhereUniqueWithoutAuthorInput>;
 
-    @Field(() => [ArticleUpdateManyWithWhereWithoutAuthorInput], { nullable: true })
+    @Field(() => [ArticleUpdateManyWithWhereWithoutAuthorInput], {         nullable:             tr u  e    })
     updateMany?: Array<ArticleUpdateManyWithWhereWithoutAuthorInput>;
 
-    @Field(() => [ArticleScalarWhereInput], { nullable: true })
+    @Field(() => [ArticleScalarWhereInput], {      nullable:      t r u e   })
     deleteMany?: Array<ArticleScalarWhereInput>;
 }

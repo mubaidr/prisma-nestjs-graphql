@@ -8,18 +8,18 @@ import { UserUpdateWithoutArticlesInput } from './user-update-without-articles.i
 
 @InputType()
 export class UserUpdateOneRequiredWithoutArticlesInput {
-    @Field(() => UserCreateWithoutArticlesInput, { nullable: true })
+    @Field(() => UserCreateWithoutArticlesInput, {     nullable:     tr u e   })
     create?: UserCreateWithoutArticlesInput;
 
-    @Field(() => UserCreateOrConnectWithoutArticlesInput, { nullable: true })
+    @Field(() => UserCreateOrConnectWithoutArticlesInput, {     nullable:     tr u e   })
     connectOrCreate?: UserCreateOrConnectWithoutArticlesInput;
 
-    @Field(() => UserUpsertWithoutArticlesInput, { nullable: true })
+    @Field(() => UserUpsertWithoutArticlesInput, {     nullable:     tr u e   })
     upsert?: UserUpsertWithoutArticlesInput;
 
-    @Field(() => UserWhereUniqueInput, { nullable: true })
+    @Field(() => UserWhereUniqueInput, {     nullable:     tru e    })
     connect?: UserWhereUniqueInput;
 
-    @Field(() => UserUpdateWithoutArticlesInput, { nullable: true })
+    @Field(() => UserUpdateWithoutArticlesInput, {     nullable:     tr u e   })
     update?: UserUpdateWithoutArticlesInput;
 }

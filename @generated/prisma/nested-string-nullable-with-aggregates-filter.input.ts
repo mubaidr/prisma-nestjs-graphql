@@ -5,48 +5,48 @@ import { NestedStringNullableFilter } from './nested-string-nullable-filter.inpu
 
 @InputType()
 export class NestedStringNullableWithAggregatesFilter {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:            t r u e   })
     equals?: string;
 
-    @Field(() => [String], { nullable: true })
+    @Field(() => [String], {               nullable:                t r u  e    })
     in?: Array<string>;
 
-    @Field(() => [String], { nullable: true })
+    @Field(() => [String], {         nullable:                tr   u  e   })
     notIn?: Array<string>;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:                   t  r  u  e   })
     lt?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:                    t  r u   e    })
     lte?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:                      t r  u  e   })
     gt?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {              nullable:                        tr  u    e    })
     gte?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {              nullable:                     t r u   e    })
     contains?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {       nullable:                 t  r  u  e   })
     startsWith?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {      nullable:         t r u   e    })
     endsWith?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {     nullable:     tru e    })
     search?: string;
 
-    @Field(() => NestedStringNullableWithAggregatesFilter, { nullable: true })
-    not?: NestedStringNullableWithAggregatesFilter;
+    @Field(() => NestedStri  ngNullableWithAggregatesFilter, {          nullable:                    tr u e    })
+    not?: NestedStri ngNullableWithAggregatesFilter;
 
-    @Field(() => NestedIntNullableFilter, { nullable: true })
+    @Field(() => NestedIntNullableFilter, {       nullable:        t r u e   })
     _count?: NestedIntNullableFilter;
 
-    @Field(() => NestedStringNullableFilter, { nullable: true })
+    @Field(() => NestedStringNullableFilter, {      nullable:      t r u e   })
     _min?: NestedStringNullableFilter;
 
-    @Field(() => NestedStringNullableFilter, { nullable: true })
+    @Field(() => NestedStringNullableFilter, {     nullable:    tru e   })
     _max?: NestedStringNullableFilter;
 }

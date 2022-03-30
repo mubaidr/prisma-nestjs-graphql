@@ -6,18 +6,18 @@ import { ProfileOrderByRelevanceInput } from './profile-order-by-relevance.input
 
 @InputType()
 export class ProfileOrderByWithRelationAndSearchRelevanceInput {
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {     nullable:     tru e    })
     id?: keyof typeof SortOrder;
 
-    @Field(() => UserOrderByWithRelationAndSearchRelevanceInput, { nullable: true })
+    @Field(() => UserOrderByWithRelationAndSearchRelevanceInput, {     nullable:     tr u e   })
     user?: UserOrderByWithRelationAndSearchRelevanceInput;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {     nullable:     tru e    })
     userId?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {     nullable:     tru e    })
     dummy?: keyof typeof SortOrder;
 
-    @Field(() => ProfileOrderByRelevanceInput, { nullable: true })
+    @Field(() => ProfileOrderByRelevanceInput, {     nullable:     tr u e   })
     _relevance?: ProfileOrderByRelevanceInput;
 }

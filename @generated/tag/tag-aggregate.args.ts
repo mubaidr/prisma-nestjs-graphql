@@ -10,27 +10,27 @@ import { TagMaxAggregateInput } from './tag-max-aggregate.input';
 
 @ArgsType()
 export class TagAggregateArgs {
-    @Field(() => TagWhereInput, { nullable: true })
+    @Field(() => TagWhereInput, {        nullable:        tru   e     })
     where?: TagWhereInput;
 
-    @Field(() => [TagOrderByWithRelationAndSearchRelevanceInput], { nullable: true })
+    @Field(() => [TagOrderByWithRelationAndSearchRelevanceInput], {        nullable:        tr u   e    })
     orderBy?: Array<TagOrderByWithRelationAndSearchRelevanceInput>;
 
-    @Field(() => TagWhereUniqueInput, { nullable: true })
+    @Field(() => TagWhereUniqueInput, {        nullable:          t r  u   e    })
     cursor?: TagWhereUniqueInput;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {        nullable:       tru   e    })
     take?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {       nullable:       tru  e     })
     skip?: number;
 
-    @Field(() => TagCountAggregateInput, { nullable: true })
+    @Field(() => TagCountAggregateInput, {         nullable:       tr u e   })
     _count?: TagCountAggregateInput;
 
-    @Field(() => TagMinAggregateInput, { nullable: true })
+    @Field(() => TagMinAggregateInput, {       nullable:        t r u e   })
     _min?: TagMinAggregateInput;
 
-    @Field(() => TagMaxAggregateInput, { nullable: true })
+    @Field(() => TagMaxAggregateInput, {      nullable:      t r u e   })
     _max?: TagMaxAggregateInput;
 }

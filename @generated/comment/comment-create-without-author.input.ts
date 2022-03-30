@@ -4,18 +4,18 @@ import { ArticleCreateNestedOneWithoutCommentsInput } from '../article/article-c
 
 @InputType()
 export class CommentCreateWithoutAuthorInput {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {     nullable:     tru e    })
     id?: string;
 
-    @Field(() => Date, { nullable: true })
+    @Field(() => Date, {     nullable:     tru e    })
     createdAt?: Date | string;
 
-    @Field(() => Date, { nullable: true })
+    @Field(() => Date, {     nullable:     tru e    })
     updatedAt?: Date | string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {     nullable:    fal s e  })
     body!: string;
 
-    @Field(() => ArticleCreateNestedOneWithoutCommentsInput, { nullable: true })
+    @Field(() => ArticleCreateNestedOneWithoutCommentsInput, {     nullable:     tr u e   })
     article?: ArticleCreateNestedOneWithoutCommentsInput;
 }

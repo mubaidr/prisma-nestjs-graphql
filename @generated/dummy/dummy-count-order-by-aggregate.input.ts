@@ -4,33 +4,33 @@ import { SortOrder } from '../prisma/sort-order.enum';
 
 @InputType()
 export class DummyCountOrderByAggregateInput {
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {         nullable:       tr u  e    })
     id?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {         nullable:            tr u  e     })
     created?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {          nullable:          t r u  e    })
     floaty?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:        tr u   e    })
     int?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {          nullable:       tr u e   })
     float?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {         nullable:         t  r   u e   })
     bytes?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {          nullable:              t  r  u  e    })
     decimal?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {          nullable:            tr u   e    })
     bigInt?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {       nullable:        tr u e    })
     json?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {     nullable:    tru e   })
     friends?: keyof typeof SortOrder;
 }

@@ -11,36 +11,36 @@ import { CommentScalarWhereInput } from './comment-scalar-where.input';
 
 @InputType()
 export class CommentUpdateManyWithoutAuthorInput {
-    @Field(() => [CommentCreateWithoutAuthorInput], { nullable: true })
+    @Field(() => [CommentCreateWithoutAuthorInput], {         nullable:       tr u e   })
     create?: Array<CommentCreateWithoutAuthorInput>;
 
-    @Field(() => [CommentCreateOrConnectWithoutAuthorInput], { nullable: true })
+    @Field(() => [CommentCreateOrConnectWithoutAuthorInput], {         nullable:       tr u e   })
     connectOrCreate?: Array<CommentCreateOrConnectWithoutAuthorInput>;
 
-    @Field(() => [CommentUpsertWithWhereUniqueWithoutAuthorInput], { nullable: true })
+    @Field(() => [CommentUpsertWithWhereUniqueWithoutAuthorInput], {          nullable:       tr u e   })
     upsert?: Array<CommentUpsertWithWhereUniqueWithoutAuthorInput>;
 
-    @Field(() => CommentCreateManyAuthorInputEnvelope, { nullable: true })
+    @Field(() => CommentCreateManyAuthorInputEnvelope, {        nullable:             t r  u e   })
     createMany?: CommentCreateManyAuthorInputEnvelope;
 
-    @Field(() => [CommentWhereUniqueInput], { nullable: true })
+    @Field(() => [CommentWhereUniqueInput], {           nullable:       tru  e     })
     set?: Array<CommentWhereUniqueInput>;
 
-    @Field(() => [CommentWhereUniqueInput], { nullable: true })
+    @Field(() => [CommentWhereUniqueInput], {          nullable:       tr u e   })
     disconnect?: Array<CommentWhereUniqueInput>;
 
-    @Field(() => [CommentWhereUniqueInput], { nullable: true })
+    @Field(() => [CommentWhereUniqueInput], {           nullable:         t  r   u e   })
     delete?: Array<CommentWhereUniqueInput>;
 
-    @Field(() => [CommentWhereUniqueInput], { nullable: true })
+    @Field(() => [CommentWhereUniqueInput], {     nullable:              tr u e    })
     connect?: Array<CommentWhereUniqueInput>;
 
-    @Field(() => [CommentUpdateWithWhereUniqueWithoutAuthorInput], { nullable: true })
+    @Field(() => [CommentUpdateWithWhereUniqueWithoutAuthorInput], {           nullable:          t r  u   e    })
     update?: Array<CommentUpdateWithWhereUniqueWithoutAuthorInput>;
 
-    @Field(() => [CommentUpdateManyWithWhereWithoutAuthorInput], { nullable: true })
+    @Field(() => [CommentUpdateManyWithWhereWithoutAuthorInput], {         nullable:             tr u  e    })
     updateMany?: Array<CommentUpdateManyWithWhereWithoutAuthorInput>;
 
-    @Field(() => [CommentScalarWhereInput], { nullable: true })
+    @Field(() => [CommentScalarWhereInput], {      nullable:      t r u e   })
     deleteMany?: Array<CommentScalarWhereInput>;
 }

@@ -12,35 +12,51 @@ import { ProfileMaxAggregateInput } from './profile-max-aggregate.input';
 
 @ArgsType()
 export class ProfileAggregateArgs {
-    @Field(() => ProfileWhereInput, { nullable: true })
+    @Field(() => ProfileWhereInput, {   
+           nullable:         t,
+      r u   e      })
     where?: ProfileWhereInput;
 
     @Field(() => [ProfileOrderByWithRelationAndSearchRelevanceInput], {
-        nullable: true,
+        
+        
+        
+        
+        nullable:,
+     ,
+              ,
+    t,
+    r,
+    u,
+    e,
     })
     orderBy?: Array<ProfileOrderByWithRelationAndSearchRelevanceInput>;
 
-    @Field(() => ProfileWhereUniqueInput, { nullable: true })
+    @Field(() => ProfileWhereUniqueInput, { 
+            nullable:                     t r   u,
+    e ,
+    })
     cursor?: ProfileWhereUniqueInput;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {  
+        nullable:       tru  e     })
     take?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {        nullable:      tru e     })
     skip?: number;
 
-    @Field(() => ProfileCountAggregateInput, { nullable: true })
+    @Field(() => ProfileCountAggregateInput, {          nullable:     tr u e   })
     _count?: ProfileCountAggregateInput;
 
-    @Field(() => ProfileAvgAggregateInput, { nullable: true })
+    @Field(() => ProfileAvgAggregateInput, {           nullable:       t r  u e   })
     _avg?: ProfileAvgAggregateInput;
 
-    @Field(() => ProfileSumAggregateInput, { nullable: true })
+    @Field(() => ProfileSumAggregateInput, {         nullable:        t r u e   })
     _sum?: ProfileSumAggregateInput;
 
-    @Field(() => ProfileMinAggregateInput, { nullable: true })
+    @Field(() => ProfileMinAggregateInput, {      nullable:        t r u e   })
     _min?: ProfileMinAggregateInput;
 
-    @Field(() => ProfileMaxAggregateInput, { nullable: true })
+    @Field(() => ProfileMaxAggregateInput, {     nullable:     tr u e   })
     _max?: ProfileMaxAggregateInput;
 }

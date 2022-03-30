@@ -9,39 +9,39 @@ import { NullableBoolFieldUpdateOperationsInput } from '../prisma/nullable-bool-
 
 @InputType()
 export class ArticleUncheckedUpdateWithoutFavoritedByInput {
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {          nullable:           t  r    u e      })
     id?: StringFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {           nullable:          t  r u   e      })
     slug?: StringFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {           nullable:         t r  u  e    })
     title?: StringFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {           nullable:            t  r u   e    })
     description?: StringFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {         nullable:            t r  u   e    })
     body?: StringFieldUpdateOperationsInput;
 
-    @Field(() => TagUncheckedUpdateManyWithoutArticlesInput, { nullable: true })
+    @Field(() => TagUncheckedUpdateManyWithoutArticlesInput, {       nullable:       tru   e    })
     tags?: TagUncheckedUpdateManyWithoutArticlesInput;
 
-    @Field(() => DateTimeFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => DateTimeFieldUpdateOperationsInput, {         nullable:                 t r u  e   })
     createdAt?: DateTimeFieldUpdateOperationsInput;
 
-    @Field(() => DateTimeFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => DateTimeFieldUpdateOperationsInput, {           nullable:            t r  u   e    })
     updatedAt?: DateTimeFieldUpdateOperationsInput;
 
-    @Field(() => IntFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => IntFieldUpdateOperationsInput, {        nullable:        tr u   e    })
     favoritesCount?: IntFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {        nullable:               t r u  e   })
     authorId?: StringFieldUpdateOperationsInput;
 
-    @Field(() => CommentUncheckedUpdateManyWithoutArticleInput, { nullable: true })
+    @Field(() => CommentUncheckedUpdateManyWithoutArticleInput, {       nullable:        tr u e    })
     comments?: CommentUncheckedUpdateManyWithoutArticleInput;
 
-    @Field(() => NullableBoolFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableBoolFieldUpdateOperationsInput, {     nullable:     tr u e   })
     active?: NullableBoolFieldUpdateOperationsInput;
 }

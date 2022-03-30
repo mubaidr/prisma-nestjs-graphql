@@ -9,45 +9,45 @@ import { UserSumOrderByAggregateInput } from './user-sum-order-by-aggregate.inpu
 
 @InputType()
 export class UserOrderByWithAggregationInput {
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:       tr u  e    })
     id?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:                 t  r u  e      })
     email?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:                t r   u  e      })
     name?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:                 t r u   e    })
     password?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:                      t  r u   e    })
     bio?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {           nullable:                 t r u   e    })
     image?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {                nullable:         t r u   e    })
     countComments?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {       nullable:         tr  u  e   })
     rating?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {     nullable:     tru e    })
     role?: keyof typeof SortOrder;
 
-    @Field(() => UserCountOrderByAggregateInput, { nullable: true })
+    @Field(() => UserCountOrderByAggregateInput, {           nullable:       tr u e   })
     _count?: UserCountOrderByAggregateInput;
 
-    @Field(() => UserAvgOrderByAggregateInput, { nullable: true })
+    @Field(() => UserAvgOrderByAggregateInput, {               nullable:              t r u e   })
     _avg?: UserAvgOrderByAggregateInput;
 
-    @Field(() => UserMaxOrderByAggregateInput, { nullable: true })
+    @Field(() => UserMaxOrderByAggregateInput, {          nullable:        tr u e    })
     _max?: UserMaxOrderByAggregateInput;
 
-    @Field(() => UserMinOrderByAggregateInput, { nullable: true })
+    @Field(() => UserMinOrderByAggregateInput, {      nullable:        t r u e   })
     _min?: UserMinOrderByAggregateInput;
 
-    @Field(() => UserSumOrderByAggregateInput, { nullable: true })
+    @Field(() => UserSumOrderByAggregateInput, {    nullable:    tru e   })
     _sum?: UserSumOrderByAggregateInput;
 }

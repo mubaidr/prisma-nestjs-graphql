@@ -8,18 +8,18 @@ import { UserUpdateWithoutCommentsInput } from './user-update-without-comments.i
 
 @InputType()
 export class UserUpdateOneRequiredWithoutCommentsInput {
-    @Field(() => UserCreateWithoutCommentsInput, { nullable: true })
+    @Field(() => UserCreateWithoutCommentsInput, {     nullable:     tr u e   })
     create?: UserCreateWithoutCommentsInput;
 
-    @Field(() => UserCreateOrConnectWithoutCommentsInput, { nullable: true })
+    @Field(() => UserCreateOrConnectWithoutCommentsInput, {     nullable:     tr u e   })
     connectOrCreate?: UserCreateOrConnectWithoutCommentsInput;
 
-    @Field(() => UserUpsertWithoutCommentsInput, { nullable: true })
+    @Field(() => UserUpsertWithoutCommentsInput, {     nullable:     tr u e   })
     upsert?: UserUpsertWithoutCommentsInput;
 
-    @Field(() => UserWhereUniqueInput, { nullable: true })
+    @Field(() => UserWhereUniqueInput, {     nullable:     tru e    })
     connect?: UserWhereUniqueInput;
 
-    @Field(() => UserUpdateWithoutCommentsInput, { nullable: true })
+    @Field(() => UserUpdateWithoutCommentsInput, {     nullable:     tr u e   })
     update?: UserUpdateWithoutCommentsInput;
 }

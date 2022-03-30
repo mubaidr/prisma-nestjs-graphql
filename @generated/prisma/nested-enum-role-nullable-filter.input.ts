@@ -4,15 +4,15 @@ import { Role } from './role.enum';
 
 @InputType()
 export class NestedEnumRoleNullableFilter {
-    @Field(() => Role, { nullable: true })
+    @Field(() => Role, {    nullable:    true    })
     equals?: keyof typeof Role;
 
-    @Field(() => [Role], { nullable: true })
+    @Field(() => [Role], {    nullable:    true    })
     in?: Array<keyof typeof Role>;
 
-    @Field(() => [Role], { nullable: true })
+    @Field(() => [Role], {    nullable:    tru e   })
     notIn?: Array<keyof typeof Role>;
 
-    @Field(() => NestedEnumRoleNullableFilter, { nullable: true })
+    @Field(() => NestedEnumRoleNullableFilter, {    nullable:    tru e   })
     not?: NestedEnumRoleNullableFilter;
 }

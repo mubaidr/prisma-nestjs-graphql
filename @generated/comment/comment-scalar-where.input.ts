@@ -6,30 +6,30 @@ import { StringNullableFilter } from '../prisma/string-nullable-filter.input';
 
 @InputType()
 export class CommentScalarWhereInput {
-    @Field(() => [CommentScalarWhereInput], { nullable: true })
+    @Field(() => [CommentScalarWhereInput], {         nullable:        tru  e      })
     AND?: Array<CommentScalarWhereInput>;
 
-    @Field(() => [CommentScalarWhereInput], { nullable: true })
+    @Field(() => [CommentScalarWhereInput], {        nullable:          t r  u e    })
     OR?: Array<CommentScalarWhereInput>;
 
-    @Field(() => [CommentScalarWhereInput], { nullable: true })
+    @Field(() => [CommentScalarWhereInput], {         nullable:         t r u   e    })
     NOT?: Array<CommentScalarWhereInput>;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {        nullable:            t r u  e    })
     id?: StringFilter;
 
-    @Field(() => DateTimeFilter, { nullable: true })
+    @Field(() => DateTimeFilter, {         nullable:         tr  u   e    })
     createdAt?: DateTimeFilter;
 
-    @Field(() => DateTimeFilter, { nullable: true })
+    @Field(() => DateTimeFilter, {       nullable:         t r u   e    })
     updatedAt?: DateTimeFilter;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {          nullable:          tr u   e    })
     body?: StringFilter;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {       nullable:            t r u e   })
     authorId?: StringFilter;
 
-    @Field(() => StringNullableFilter, { nullable: true })
+    @Field(() => StringNullableFilter, {     nullable:    tru e   })
     articleId?: StringNullableFilter;
 }

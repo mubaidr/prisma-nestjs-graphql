@@ -12,35 +12,51 @@ import { ArticleMaxAggregateInput } from './article-max-aggregate.input';
 
 @ArgsType()
 export class ArticleAggregateArgs {
-    @Field(() => ArticleWhereInput, { nullable: true })
+    @Field(() => ArticleWhereInput, {   
+           nullable:         t,
+      r u   e      })
     where?: ArticleWhereInput;
 
     @Field(() => [ArticleOrderByWithRelationAndSearchRelevanceInput], {
-        nullable: true,
+        
+        
+        
+        
+        nullable:,
+     ,
+              ,
+    t,
+    r,
+    u,
+    e,
     })
     orderBy?: Array<ArticleOrderByWithRelationAndSearchRelevanceInput>;
 
-    @Field(() => ArticleWhereUniqueInput, { nullable: true })
+    @Field(() => ArticleWhereUniqueInput, { 
+            nullable:                     t r   u,
+    e ,
+    })
     cursor?: ArticleWhereUniqueInput;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {  
+        nullable:       tru  e     })
     take?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {        nullable:      tru e     })
     skip?: number;
 
-    @Field(() => ArticleCountAggregateInput, { nullable: true })
+    @Field(() => ArticleCountAggregateInput, {          nullable:     tr u e   })
     _count?: ArticleCountAggregateInput;
 
-    @Field(() => ArticleAvgAggregateInput, { nullable: true })
+    @Field(() => ArticleAvgAggregateInput, {           nullable:       t r  u e   })
     _avg?: ArticleAvgAggregateInput;
 
-    @Field(() => ArticleSumAggregateInput, { nullable: true })
+    @Field(() => ArticleSumAggregateInput, {         nullable:        t r u e   })
     _sum?: ArticleSumAggregateInput;
 
-    @Field(() => ArticleMinAggregateInput, { nullable: true })
+    @Field(() => ArticleMinAggregateInput, {      nullable:        t r u e   })
     _min?: ArticleMinAggregateInput;
 
-    @Field(() => ArticleMaxAggregateInput, { nullable: true })
+    @Field(() => ArticleMaxAggregateInput, {     nullable:     tr u e   })
     _max?: ArticleMaxAggregateInput;
 }

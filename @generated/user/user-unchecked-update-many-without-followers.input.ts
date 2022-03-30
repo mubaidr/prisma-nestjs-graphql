@@ -10,33 +10,33 @@ import { UserScalarWhereInput } from './user-scalar-where.input';
 
 @InputType()
 export class UserUncheckedUpdateManyWithoutFollowersInput {
-    @Field(() => [UserCreateWithoutFollowersInput], { nullable: true })
+    @Field(() => [UserCreateWithoutFollowersInput], {        nullable:      tr u e    })
     create?: Array<UserCreateWithoutFollowersInput>;
 
-    @Field(() => [UserCreateOrConnectWithoutFollowersInput], { nullable: true })
+    @Field(() => [UserCreateOrConnectWithoutFollowersInput], {        nullable:       tr u e   })
     connectOrCreate?: Array<UserCreateOrConnectWithoutFollowersInput>;
 
-    @Field(() => [UserUpsertWithWhereUniqueWithoutFollowersInput], { nullable: true })
+    @Field(() => [UserUpsertWithWhereUniqueWithoutFollowersInput], {        nullable:        tr  u  e    })
     upsert?: Array<UserUpsertWithWhereUniqueWithoutFollowersInput>;
 
-    @Field(() => [UserWhereUniqueInput], { nullable: true })
+    @Field(() => [UserWhereUniqueInput], {         nullable:         t r u  e     })
     set?: Array<UserWhereUniqueInput>;
 
-    @Field(() => [UserWhereUniqueInput], { nullable: true })
+    @Field(() => [UserWhereUniqueInput], {         nullable:       tr u e   })
     disconnect?: Array<UserWhereUniqueInput>;
 
-    @Field(() => [UserWhereUniqueInput], { nullable: true })
+    @Field(() => [UserWhereUniqueInput], {          nullable:           t r u  e   })
     delete?: Array<UserWhereUniqueInput>;
 
-    @Field(() => [UserWhereUniqueInput], { nullable: true })
+    @Field(() => [UserWhereUniqueInput], {       nullable:      tru  e    })
     connect?: Array<UserWhereUniqueInput>;
 
-    @Field(() => [UserUpdateWithWhereUniqueWithoutFollowersInput], { nullable: true })
+    @Field(() => [UserUpdateWithWhereUniqueWithoutFollowersInput], {          nullable:             t  r u  e    })
     update?: Array<UserUpdateWithWhereUniqueWithoutFollowersInput>;
 
-    @Field(() => [UserUpdateManyWithWhereWithoutFollowersInput], { nullable: true })
+    @Field(() => [UserUpdateManyWithWhereWithoutFollowersInput], {         nullable:           tr u  e    })
     updateMany?: Array<UserUpdateManyWithWhereWithoutFollowersInput>;
 
-    @Field(() => [UserScalarWhereInput], { nullable: true })
+    @Field(() => [UserScalarWhereInput], {      nullable:      t r u e   })
     deleteMany?: Array<UserScalarWhereInput>;
 }

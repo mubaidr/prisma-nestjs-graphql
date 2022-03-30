@@ -5,42 +5,42 @@ import { NestedStringFilter } from './nested-string-filter.input';
 
 @InputType()
 export class StringFilter {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:        t r u e   })
     equals?: string;
 
-    @Field(() => [String], { nullable: true })
+    @Field(() => [String], {              nullable:                t r u  e    })
     in?: Array<string>;
 
-    @Field(() => [String], { nullable: true })
+    @Field(() => [String], {         nullable:             tr  u  e   })
     notIn?: Array<string>;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:                      tr u  e   })
     lt?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:                    t  r u   e    })
     lte?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:                  tr u  e   })
     gt?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:               t r  u    e    })
     gte?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {                 nullable:                    t  r u   e    })
     contains?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {              nullable:                     t  r  u  e   })
     startsWith?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {          nullable:            tr u   e    })
     endsWith?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {       nullable:        tr u e    })
     search?: string;
 
-    @Field(() => QueryMode, { nullable: true })
+    @Field(() => QueryMode, {      nullable:        tr u e    })
     mode?: keyof typeof QueryMode;
 
-    @Field(() => NestedStringFilter, { nullable: true })
+    @Field(() => NestedStringFilter, {      nullable:    tru e   })
     not?: NestedStringFilter;
 }

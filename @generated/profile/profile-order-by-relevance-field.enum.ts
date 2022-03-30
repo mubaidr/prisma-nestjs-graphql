@@ -5,6 +5,7 @@ export enum ProfileOrderByRelevanceFieldEnum {
     dummy = 'dummy',
 }
 
+
 registerEnumType(ProfileOrderByRelevanceFieldEnum, {
     name: 'ProfileOrderByRelevanceFieldEnum',
     description: undefined,

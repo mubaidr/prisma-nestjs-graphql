@@ -13,47 +13,47 @@ import { ProfileCreateNestedOneWithoutUserInput } from '../profile/profile-creat
 
 @InputType()
 export class UserCreateWithoutCommentsInput {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {            nullable:      tr u e    })
     id?: string;
 
-    @Field(() => Scalars.GraphQLEmailAddress, { nullable: false })
+    @Field(() => Scalars.GraphQLEmailAddress, {            nullable:                    fa l  s  e     })
     email!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {         nullable:                   fa l s  e     })
     @Validator.MinLength(3)
     @Validator.MaxLength(50)
     name!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {               nullable:                    fa l s e   })
     password!: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {         nullable:       tru   e    })
     bio?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {      nullable:      tru  e    })
     image?: string;
 
-    @Field(() => UserCreateNestedManyWithoutFollowersInput, { nullable: true })
+    @Field(() => UserCreateNestedManyWithoutFollowersInput, {       nullable:       tr u e   })
     following?: UserCreateNestedManyWithoutFollowersInput;
 
-    @Field(() => UserCreateNestedManyWithoutFollowingInput, { nullable: true })
+    @Field(() => UserCreateNestedManyWithoutFollowingInput, {       nullable:                   t r u  e   })
     followers?: UserCreateNestedManyWithoutFollowingInput;
 
-    @Field(() => ArticleCreateNestedManyWithoutFavoritedByInput, { nullable: true })
+    @Field(() => ArticleCreateNestedManyWithoutFavoritedByInput, {       nullable:                    t r  u   e    })
     favoriteArticles?: ArticleCreateNestedManyWithoutFavoritedByInput;
 
-    @Field(() => ArticleCreateNestedManyWithoutAuthorInput, { nullable: true })
+    @Field(() => ArticleCreateNestedManyWithoutAuthorInput, {               nullable:                 t r u   e    })
     articles?: ArticleCreateNestedManyWithoutAuthorInput;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {               nullable:                      tr u   e    })
     countComments?: number;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {       nullable:         tr u e   })
     rating?: number;
 
-    @Field(() => Role, { nullable: true })
+    @Field(() => Role, {     nullable:     tru e    })
     role?: keyof typeof Role;
 
-    @Field(() => ProfileCreateNestedOneWithoutUserInput, { nullable: true })
+    @Field(() => ProfileCreateNestedOneWithoutUserInput, {     nullable:     tr u e   })
     profile?: ProfileCreateNestedOneWithoutUserInput;
 }

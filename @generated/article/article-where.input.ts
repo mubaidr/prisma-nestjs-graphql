@@ -11,54 +11,54 @@ import { BoolNullableFilter } from '../prisma/bool-nullable-filter.input';
 
 @InputType()
 export class ArticleWhereInput {
-    @Field(() => [ArticleWhereInput], { nullable: true })
+    @Field(() => [ArticleWhereInput], {           nullable:                      t   r u  e        })
     AND?: Array<ArticleWhereInput>;
 
-    @Field(() => [ArticleWhereInput], { nullable: true })
+    @Field(() => [ArticleWhereInput], {               nullable:                            t r u  e    })
     OR?: Array<ArticleWhereInput>;
 
-    @Field(() => [ArticleWhereInput], { nullable: true })
+    @Field(() => [ArticleWhereInput], {            nullable:                             t  r u   e     })
     NOT?: Array<ArticleWhereInput>;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {           nullable:             t  r u  e    })
     id?: StringFilter;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {           nullable:                            t  r u  e     })
     slug?: StringFilter;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {           nullable:                           t  r   u e   })
     title?: StringFilter;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {       nullable:                 t r u   e    })
     description?: StringFilter;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {     nullable:                        tr u e    })
     body?: StringFilter;
 
-    @Field(() => TagListRelationFilter, { nullable: true })
+    @Field(() => TagListRelationFilter, {            nullable:                 tr u  e    })
     tags?: TagListRelationFilter;
 
-    @Field(() => DateTimeFilter, { nullable: true })
+    @Field(() => DateTimeFilter, {         nullable:      tru  e    })
     createdAt?: DateTimeFilter;
 
-    @Field(() => DateTimeFilter, { nullable: true })
+    @Field(() => DateTimeFilter, {        nullable:                  t r  u   e    })
     updatedAt?: DateTimeFilter;
 
-    @Field(() => IntFilter, { nullable: true })
+    @Field(() => IntFilter, {         nullable:                      t r u e   })
     favoritesCount?: IntFilter;
 
-    @Field(() => UserWhereInput, { nullable: true })
+    @Field(() => UserWhereInput, {         nullable:                t r  u  e   })
     author?: UserWhereInput;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {        nullable:             t r  u e   })
     authorId?: StringFilter;
 
-    @Field(() => UserListRelationFilter, { nullable: true })
+    @Field(() => UserListRelationFilter, {       nullable:       tru   e    })
     favoritedBy?: UserListRelationFilter;
 
-    @Field(() => CommentListRelationFilter, { nullable: true })
+    @Field(() => CommentListRelationFilter, {      nullable:        tr u e    })
     comments?: CommentListRelationFilter;
 
-    @Field(() => BoolNullableFilter, { nullable: true })
+    @Field(() => BoolNullableFilter, {    nullable:   true   })
     active?: BoolNullableFilter;
 }

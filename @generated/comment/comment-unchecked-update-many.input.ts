@@ -7,21 +7,21 @@ import { NullableStringFieldUpdateOperationsInput } from '../prisma/nullable-str
 
 @InputType()
 export class CommentUncheckedUpdateManyInput {
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {     nullable:     tru e    })
     id?: StringFieldUpdateOperationsInput;
 
-    @Field(() => DateTimeFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => DateTimeFieldUpdateOperationsInput, {     nullable:     tru e    })
     createdAt?: DateTimeFieldUpdateOperationsInput;
 
     @HideField()
     updatedAt?: DateTimeFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {     nullable:     tru e    })
     body?: StringFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {     nullable:     tr u e   })
     authorId?: StringFieldUpdateOperationsInput;
 
-    @Field(() => NullableStringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableStringFieldUpdateOperationsInput, {     nullable:     tr u e   })
     articleId?: NullableStringFieldUpdateOperationsInput;
 }

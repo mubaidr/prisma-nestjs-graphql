@@ -6,30 +6,30 @@ import { StringNullableWithAggregatesFilter } from '../prisma/string-nullable-wi
 
 @InputType()
 export class CommentScalarWhereWithAggregatesInput {
-    @Field(() => [CommentScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [CommentScalarWhereWithAggregatesInput], {        nullable:         t r u  e     })
     AND?: Array<CommentScalarWhereWithAggregatesInput>;
 
-    @Field(() => [CommentScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [CommentScalarWhereWithAggregatesInput], {         nullable:        t r u  e    })
     OR?: Array<CommentScalarWhereWithAggregatesInput>;
 
-    @Field(() => [CommentScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [CommentScalarWhereWithAggregatesInput], {        nullable:        tr u   e    })
     NOT?: Array<CommentScalarWhereWithAggregatesInput>;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {         nullable:          t r u  e    })
     id?: StringWithAggregatesFilter;
 
-    @Field(() => DateTimeWithAggregatesFilter, { nullable: true })
+    @Field(() => DateTimeWithAggregatesFilter, {         nullable:          t  r u   e    })
     createdAt?: DateTimeWithAggregatesFilter;
 
-    @Field(() => DateTimeWithAggregatesFilter, { nullable: true })
+    @Field(() => DateTimeWithAggregatesFilter, {         nullable:         tr  u   e    })
     updatedAt?: DateTimeWithAggregatesFilter;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {        nullable:      tru  e    })
     body?: StringWithAggregatesFilter;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {        nullable:          t r u e   })
     authorId?: StringWithAggregatesFilter;
 
-    @Field(() => StringNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => StringNullableWithAggregatesFilter, {      nullable:      t r u e   })
     articleId?: StringNullableWithAggregatesFilter;
 }

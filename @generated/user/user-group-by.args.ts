@@ -13,36 +13,36 @@ import { UserMaxAggregateInput } from './user-max-aggregate.input';
 
 @ArgsType()
 export class UserGroupByArgs {
-    @Field(() => UserWhereInput, { nullable: true })
+    @Field(() => UserWhereInput, {           nullable:            t r  u  e     })
     where?: UserWhereInput;
 
-    @Field(() => [UserOrderByWithAggregationInput], { nullable: true })
+    @Field(() => [UserOrderByWithAggregationInput], {           nullable:            t r  u  e     })
     orderBy?: Array<UserOrderByWithAggregationInput>;
 
-    @Field(() => [UserScalarFieldEnum], { nullable: false })
+    @Field(() => [UserScalarFieldEnum], {           nullable:      fal s e  })
     by!: Array<keyof typeof UserScalarFieldEnum>;
 
-    @Field(() => UserScalarWhereWithAggregatesInput, { nullable: true })
+    @Field(() => UserScalarWhereWithAggregatesInput, {         nullable:               t r u   e    })
     having?: UserScalarWhereWithAggregatesInput;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {        nullable:          t r  u   e    })
     take?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {       nullable:      tru  e    })
     skip?: number;
 
-    @Field(() => UserCountAggregateInput, { nullable: true })
+    @Field(() => UserCountAggregateInput, {           nullable:     tr u e   })
     _count?: UserCountAggregateInput;
 
-    @Field(() => UserAvgAggregateInput, { nullable: true })
+    @Field(() => UserAvgAggregateInput, {           nullable:     tr u e   })
     _avg?: UserAvgAggregateInput;
 
-    @Field(() => UserSumAggregateInput, { nullable: true })
+    @Field(() => UserSumAggregateInput, {           nullable:          t r u e   })
     _sum?: UserSumAggregateInput;
 
-    @Field(() => UserMinAggregateInput, { nullable: true })
+    @Field(() => UserMinAggregateInput, {       nullable:            t r u e   })
     _min?: UserMinAggregateInput;
 
-    @Field(() => UserMaxAggregateInput, { nullable: true })
+    @Field(() => UserMaxAggregateInput, {     nullable:    tru e   })
     _max?: UserMaxAggregateInput;
 }

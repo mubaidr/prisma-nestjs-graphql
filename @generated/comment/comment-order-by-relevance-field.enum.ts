@@ -7,6 +7,7 @@ export enum CommentOrderByRelevanceFieldEnum {
     articleId = 'articleId',
 }
 
+
 registerEnumType(CommentOrderByRelevanceFieldEnum, {
     name: 'CommentOrderByRelevanceFieldEnum',
     description: undefined,

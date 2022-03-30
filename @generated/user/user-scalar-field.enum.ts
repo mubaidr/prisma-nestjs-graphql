@@ -12,6 +12,7 @@ export enum UserScalarFieldEnum {
     role = 'role',
 }
 
+
 registerEnumType(UserScalarFieldEnum, {
     name: 'UserScalarFieldEnum',
     description: undefined,

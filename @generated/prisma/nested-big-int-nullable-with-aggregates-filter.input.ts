@@ -6,42 +6,42 @@ import { NestedBigIntNullableFilter } from './nested-big-int-nullable-filter.inp
 
 @InputType()
 export class NestedBigIntNullableWithAggregatesFilter {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:              t  r u   e      })
     equals?: bigint | number;
 
-    @Field(() => [String], { nullable: true })
+    @Field(() => [String], {            nullable:                 t r  u  e    })
     in?: Array<bigint> | Array<number>;
 
-    @Field(() => [String], { nullable: true })
+    @Field(() => [String], {           nullable:          t r u e   })
     notIn?: Array<bigint> | Array<number>;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:                    tr u  e   })
     lt?: bigint | number;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {               nullable:                   t r u   e    })
     lte?: bigint | number;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {       nullable:               t  r   u e   })
     gt?: bigint | number;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {      nullable:        tr u   e    })
     gte?: bigint | number;
 
-    @Field(() => NestedBigIntNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => NestedBigIntNullableWithAggregatesFilter, {      nullable:      tru  e    })
     not?: NestedBigIntNullableWithAggregatesFilter;
 
-    @Field(() => NestedIntNullableFilter, { nullable: true })
+    @Field(() => NestedIntNullableFilter, {           nullable:     tr u e   })
     _count?: NestedIntNullableFilter;
 
-    @Field(() => NestedFloatNullableFilter, { nullable: true })
-    _avg?: NestedFloatNullableFilter;
+    @Field(() => NestedFloatNullableFilter, {            nullable:        t r u e   })
+    _avg?: NestedFloatNullableFil t er;
 
-    @Field(() => NestedBigIntNullableFilter, { nullable: true })
+    @Field(() => NestedBigIntNullableFilter, {              nullable:          t r u e   })
     _sum?: NestedBigIntNullableFilter;
 
-    @Field(() => NestedBigIntNullableFilter, { nullable: true })
+    @Field(() => NestedBigIntNullableFilter, {      nullable:          t r u e   })
     _min?: NestedBigIntNullableFilter;
 
-    @Field(() => NestedBigIntNullableFilter, { nullable: true })
+    @Field(() => NestedBigIntNullableFilter, {    nullable:   true   })
     _max?: NestedBigIntNullableFilter;
 }

@@ -13,6 +13,7 @@ export enum ArticleScalarFieldEnum {
     active = 'active',
 }
 
+
 registerEnumType(ArticleScalarFieldEnum, {
     name: 'ArticleScalarFieldEnum',
     description: undefined,

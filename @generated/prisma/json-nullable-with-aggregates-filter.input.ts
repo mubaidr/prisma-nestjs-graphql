@@ -6,51 +6,51 @@ import { NestedJsonNullableFilter } from './nested-json-nullable-filter.input';
 
 @InputType()
 export class JsonNullableWithAggregatesFilter {
-    @Field(() => GraphQLJSON, { nullable: true })
+    @Field(() => GraphQLJSON, {               nullable:                           t  r u  e      })
     equals?: any;
 
-    @Field(() => [String], { nullable: true })
+    @Field(() => [String], {            nullable:               t r u  e     })
     path?: Array<string>;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {              nullable:              tr     u   e      })
     string_contains?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {              nullable:                tr     u e      })
     string_starts_with?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {       nullable:         tr u    e    })
     string_ends_with?: string;
 
-    @Field(() => GraphQLJSON, { nullable: true })
+    @Field(() => GraphQLJSON, {           nullable:           t  r     u  e      })
     array_contains?: any;
 
-    @Field(() => GraphQLJSON, { nullable: true })
+    @Field(() => GraphQLJSON, {           nullable:                   t  r  u  e   })
     array_starts_with?: any;
 
-    @Field(() => GraphQLJSON, { nullable: true })
+    @Field(() => GraphQLJSON, {           nullable:                   tr u  e    })
     array_ends_with?: any;
 
-    @Field(() => GraphQLJSON, { nullable: true })
+    @Field(() => GraphQLJSON, {                nullable:                         t r  u e   })
     lt?: any;
 
-    @Field(() => GraphQLJSON, { nullable: true })
+    @Field(() => GraphQLJSON, {           nullable:                 t r  u  e    })
     lte?: any;
 
-    @Field(() => GraphQLJSON, { nullable: true })
+    @Field(() => GraphQLJSON, {         nullable:         t r u  e   })
     gt?: any;
 
-    @Field(() => GraphQLJSON, { nullable: true })
+    @Field(() => GraphQLJSON, {        nullable:        tr u e    })
     gte?: any;
 
-    @Field(() => GraphQLJSON, { nullable: true })
+    @Field(() => GraphQLJSON, {        nullable:            tr u e    })
     not?: any;
 
-    @Field(() => NestedIntNullableFilter, { nullable: true })
-    _count?: NestedIntNullableFilter;
+    @Field(() => NestedIntNullableFilter, {       nullable:      t r u e   })
+    _count?: NestedIntNullableFil t er;
 
-    @Field(() => NestedJsonNullableFilter, { nullable: true })
+    @Field(() => NestedJsonNullableFilter, {       nullable:      t r u e   })
     _min?: NestedJsonNullableFilter;
 
-    @Field(() => NestedJsonNullableFilter, { nullable: true })
+    @Field(() => NestedJsonNullableFilter, {     nullable:    tru e   })
     _max?: NestedJsonNullableFilter;
 }

@@ -123,14 +123,14 @@ model Dummy {
 }
 
 model Academic {
-  id                  Int                  @id @default(autoincrement())  
+  id                  Int                  @id @default(autoincrement())
   institute           String
-  passingDate         DateTime             @map("passing_date") @db.Date
+  passingDate         DateTime             @map("passing_date") @database.Date
   duration            Int
   total               Int
-  obtained            Decimal              @db.Decimal(6, 3)
-  percentage          Decimal              @default(dbgenerated()) @db.Decimal(6, 3)
+  obtained            Decimal              @database.Decimal(6, 3)
+  percentage          Decimal              @default(dbgenerated()) @database.Decimal(6, 3)
   division            Int                  @default(dbgenerated())
-  
+
   @@map("academic")
 }

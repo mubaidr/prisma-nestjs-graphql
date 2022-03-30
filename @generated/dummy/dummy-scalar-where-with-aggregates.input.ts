@@ -13,42 +13,42 @@ import { StringNullableListFilter } from '../prisma/string-nullable-list-filter.
 
 @InputType()
 export class DummyScalarWhereWithAggregatesInput {
-    @Field(() => [DummyScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [DummyScalarWhereWithAggregatesInput], {           nullable:            t r u  e      })
     AND?: Array<DummyScalarWhereWithAggregatesInput>;
 
-    @Field(() => [DummyScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [DummyScalarWhereWithAggregatesInput], {           nullable:                t r   u e     })
     OR?: Array<DummyScalarWhereWithAggregatesInput>;
 
-    @Field(() => [DummyScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [DummyScalarWhereWithAggregatesInput], {             nullable:          t  r u   e      })
     NOT?: Array<DummyScalarWhereWithAggregatesInput>;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {          nullable:               t   r   u e    })
     id?: StringWithAggregatesFilter;
 
-    @Field(() => DateTimeWithAggregatesFilter, { nullable: true })
+    @Field(() => DateTimeWithAggregatesFilter, {           nullable:        tr u   e    })
     created?: DateTimeWithAggregatesFilter;
 
-    @Field(() => FloatWithAggregatesFilter, { nullable: true })
+    @Field(() => FloatWithAggregatesFilter, {           nullable:              t r  u     e      })
     floaty?: FloatWithAggregatesFilter;
 
-    @Field(() => IntNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => IntNullableWithAggregatesFilter, {           nullable:      tru  e    })
     int?: IntNullableWithAggregatesFilter;
 
-    @Field(() => FloatNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => FloatNullableWithAggregatesFilter, {           nullable:       tr  u  e   })
     float?: FloatNullableWithAggregatesFilter;
 
-    @Field(() => BytesNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => BytesNullableWithAggregatesFilter, {          nullable:         t  r   u e   })
     bytes?: BytesNullableWithAggregatesFilter;
 
-    @Field(() => DecimalNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => DecimalNullableWithAggregatesFilter, {           nullable:              t r  u   e    })
     decimal?: DecimalNullableWithAggregatesFilter;
 
-    @Field(() => BigIntNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => BigIntNullableWithAggregatesFilter, {             nullable:                    tr u   e    })
     bigInt?: BigIntNullableWithAggregatesFilter;
 
-    @Field(() => JsonNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => JsonNullableWithAggregatesFilter, {      nullable:     tru e    })
     json?: JsonNullableWithAggregatesFilter;
 
-    @Field(() => StringNullableListFilter, { nullable: true })
+    @Field(() => StringNullableListFilter, {     nullable:     tr u e   })
     friends?: StringNullableListFilter;
 }

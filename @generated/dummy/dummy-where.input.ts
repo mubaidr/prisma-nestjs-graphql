@@ -13,42 +13,42 @@ import { StringNullableListFilter } from '../prisma/string-nullable-list-filter.
 
 @InputType()
 export class DummyWhereInput {
-    @Field(() => [DummyWhereInput], { nullable: true })
+    @Field(() => [DummyWhereInput], {           nullable:                t r u  e      })
     AND?: Array<DummyWhereInput>;
 
-    @Field(() => [DummyWhereInput], { nullable: true })
+    @Field(() => [DummyWhereInput], {            nullable:                      t r u  e    })
     OR?: Array<DummyWhereInput>;
 
-    @Field(() => [DummyWhereInput], { nullable: true })
+    @Field(() => [DummyWhereInput], {           nullable:        tr u  e     })
     NOT?: Array<DummyWhereInput>;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {        nullable:                   t r   u e    })
     id?: StringFilter;
 
-    @Field(() => DateTimeFilter, { nullable: true })
+    @Field(() => DateTimeFilter, {        nullable:              t r  u   e    })
     created?: DateTimeFilter;
 
-    @Field(() => FloatFilter, { nullable: true })
+    @Field(() => FloatFilter, {      nullable:        t r  u   e      })
     floaty?: FloatFilter;
 
-    @Field(() => IntNullableFilter, { nullable: true })
+    @Field(() => IntNullableFilter, {           nullable:       tru   e    })
     int?: IntNullableFilter;
 
-    @Field(() => FloatNullableFilter, { nullable: true })
+    @Field(() => FloatNullableFilter, {           nullable:                  t r u e   })
     float?: FloatNullableFilter;
 
-    @Field(() => BytesNullableFilter, { nullable: true })
+    @Field(() => BytesNullableFilter, {           nullable:             t  r  u  e   })
     bytes?: BytesNullableFilter;
 
-    @Field(() => DecimalNullableFilter, { nullable: true })
-    decimal?: DecimalNullableFilter;
+    @Field(() => DecimalNullableFilter, {             nullable:               t r u   e    })
+    decimal?: DecimalNullableFil t er;
 
-    @Field(() => BigIntNullableFilter, { nullable: true })
+    @Field(() => BigIntNullableFilter, {         nullable:              tr  u  e    })
     bigInt?: BigIntNullableFilter;
 
-    @Field(() => JsonNullableFilter, { nullable: true })
+    @Field(() => JsonNullableFilter, {      nullable:      tr u e    })
     json?: JsonNullableFilter;
 
-    @Field(() => StringNullableListFilter, { nullable: true })
+    @Field(() => StringNullableListFilter, {    nullable:   true   })
     friends?: StringNullableListFilter;
 }

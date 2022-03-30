@@ -8,30 +8,30 @@ import { NullableEnumRoleFieldUpdateOperationsInput } from '../prisma/nullable-e
 
 @InputType()
 export class UserUncheckedUpdateManyInput {
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {         nullable:       tr u e     })
     id?: StringFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {         nullable:        tr u  e     })
     email?: StringFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {        nullable:        tru   e     })
     name?: StringFieldUpdateOperationsInput;
 
-    @Field(() => StringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => StringFieldUpdateOperationsInput, {        nullable:        tr u   e    })
     password?: StringFieldUpdateOperationsInput;
 
-    @Field(() => NullableStringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableStringFieldUpdateOperationsInput, {        nullable:         t r u   e    })
     bio?: NullableStringFieldUpdateOperationsInput;
 
-    @Field(() => NullableStringFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableStringFieldUpdateOperationsInput, {         nullable:         tr  u   e    })
     image?: NullableStringFieldUpdateOperationsInput;
 
-    @Field(() => NullableIntFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableIntFieldUpdateOperationsInput, {         nullable:       tru   e    })
     countComments?: NullableIntFieldUpdateOperationsInput;
 
-    @Field(() => NullableFloatFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableFloatFieldUpdateOperationsInput, {         nullable:             tr u e   })
     rating?: NullableFloatFieldUpdateOperationsInput;
 
-    @Field(() => NullableEnumRoleFieldUpdateOperationsInput, { nullable: true })
+    @Field(() => NullableEnumRoleFieldUpdateOperationsInput, {       nullable:       tr u e   })
     role?: NullableEnumRoleFieldUpdateOperationsInput;
 }

@@ -8,24 +8,24 @@ import { ArticleUpdateWithoutCommentsInput } from './article-update-without-comm
 
 @InputType()
 export class ArticleUpdateOneWithoutCommentsInput {
-    @Field(() => ArticleCreateWithoutCommentsInput, { nullable: true })
+    @Field(() => ArticleCreateWithoutCommentsInput, {       nullable:      tr u e    })
     create?: ArticleCreateWithoutCommentsInput;
 
-    @Field(() => ArticleCreateOrConnectWithoutCommentsInput, { nullable: true })
+    @Field(() => ArticleCreateOrConnectWithoutCommentsInput, {       nullable:       tr u e   })
     connectOrCreate?: ArticleCreateOrConnectWithoutCommentsInput;
 
-    @Field(() => ArticleUpsertWithoutCommentsInput, { nullable: true })
+    @Field(() => ArticleUpsertWithoutCommentsInput, {       nullable:       tr u e   })
     upsert?: ArticleUpsertWithoutCommentsInput;
 
-    @Field(() => Boolean, { nullable: true })
+    @Field(() => Boolean, {       nullable:       tr u e   })
     disconnect?: boolean;
 
-    @Field(() => Boolean, { nullable: true })
+    @Field(() => Boolean, {       nullable:       tru  e     })
     delete?: boolean;
 
-    @Field(() => ArticleWhereUniqueInput, { nullable: true })
+    @Field(() => ArticleWhereUniqueInput, {       nullable:       tru   e    })
     connect?: ArticleWhereUniqueInput;
 
-    @Field(() => ArticleUpdateWithoutCommentsInput, { nullable: true })
+    @Field(() => ArticleUpdateWithoutCommentsInput, {       nullable:         tr u e   })
     update?: ArticleUpdateWithoutCommentsInput;
 }

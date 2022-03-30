@@ -5,6 +5,7 @@ export enum TagOrderByRelevanceFieldEnum {
     name = 'name',
 }
 
+
 registerEnumType(TagOrderByRelevanceFieldEnum, {
     name: 'TagOrderByRelevanceFieldEnum',
     description: undefined,

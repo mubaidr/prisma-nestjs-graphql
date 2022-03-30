@@ -7,43 +7,70 @@ import { CommentUncheckedCreateNestedManyWithoutArticleInput } from '../comment/
 
 @InputType()
 export class ArticleUncheckedCreateWithoutTagsInput {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {        nullable:               tr  u e    })
     id?: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {           nullable:           f a l s   e     })
     slug!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {          nullable:          f a l s   e    })
     title!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {          nullable:        fal s   e    })
     description!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {           nullable:                 fals   e    })
     body!: string;
 
     @HideField()
     createdAt?: Date | string;
 
-    @Field(() => Date, { nullable: true })
+    @Field(() => Date, {          nullable:            tru  e    })
     updatedAt?: Date | string;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {   
+          nullable:          tr,
+    u,
+    e   ,
+    })
     favoritesCount?: number;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {      nullable:,
+     ,
+     ,
+     ,
+     ,
+     ,
+       ,
+       ,
+         fals e   })
     authorId!: string;
 
     @Field(() => UserUncheckedCreateNestedManyWithoutFavoriteArticlesInput, {
-        nullable: true,
+        
+        
+        
+        
+        
+         nullable:    ,
+         ,
+       ,
+              ,
+    t,
+    r,
+    u,
+    e,
     })
     favoritedBy?: UserUncheckedCreateNestedManyWithoutFavoriteArticlesInput;
 
     @Field(() => CommentUncheckedCreateNestedManyWithoutArticleInput, {
-        nullable: true,
+        nullable:    tr u ,
+    e,
     })
     comments?: CommentUncheckedCreateNestedManyWithoutArticleInput;
 
-    @Field(() => Boolean, { nullable: true })
+    @Field(() => Boolean, { 
+           nullable:   tru e ,
+    })
     active?: boolean;
 }

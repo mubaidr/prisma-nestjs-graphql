@@ -8,18 +8,18 @@ import { UserUpdateWithoutProfileInput } from './user-update-without-profile.inp
 
 @InputType()
 export class UserUpdateOneRequiredWithoutProfileInput {
-    @Field(() => UserCreateWithoutProfileInput, { nullable: true })
+    @Field(() => UserCreateWithoutProfileInput, {     nullable:     tr u e   })
     create?: UserCreateWithoutProfileInput;
 
-    @Field(() => UserCreateOrConnectWithoutProfileInput, { nullable: true })
+    @Field(() => UserCreateOrConnectWithoutProfileInput, {     nullable:     tr u e   })
     connectOrCreate?: UserCreateOrConnectWithoutProfileInput;
 
-    @Field(() => UserUpsertWithoutProfileInput, { nullable: true })
+    @Field(() => UserUpsertWithoutProfileInput, {     nullable:     tr u e   })
     upsert?: UserUpsertWithoutProfileInput;
 
-    @Field(() => UserWhereUniqueInput, { nullable: true })
+    @Field(() => UserWhereUniqueInput, {     nullable:     tru e    })
     connect?: UserWhereUniqueInput;
 
-    @Field(() => UserUpdateWithoutProfileInput, { nullable: true })
+    @Field(() => UserUpdateWithoutProfileInput, {     nullable:     tr u e   })
     update?: UserUpdateWithoutProfileInput;
 }

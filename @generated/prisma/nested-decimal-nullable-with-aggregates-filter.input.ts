@@ -7,42 +7,42 @@ import { NestedDecimalNullableFilter } from './nested-decimal-nullable-filter.in
 
 @InputType()
 export class NestedDecimalNullableWithAggregatesFilter {
-    @Field(() => GraphQLDecimal, { nullable: true })
+    @Field(() => GraphQLDecimal, {           nullable:             t   r u  e       })
     equals?: Decimal;
 
-    @Field(() => [GraphQLDecimal], { nullable: true })
+    @Field(() => [GraphQLDecimal], {           nullable:                t r  u e    })
     in?: Array<Decimal>;
 
-    @Field(() => [GraphQLDecimal], { nullable: true })
+    @Field(() => [GraphQLDecimal], {            nullable:           t r u  e   })
     notIn?: Array<Decimal>;
 
-    @Field(() => GraphQLDecimal, { nullable: true })
+    @Field(() => GraphQLDecimal, {            nullable:                    t r u e   })
     lt?: Decimal;
 
-    @Field(() => GraphQLDecimal, { nullable: true })
+    @Field(() => GraphQLDecimal, {              nullable:                  tr u   e    })
     lte?: Decimal;
 
-    @Field(() => GraphQLDecimal, { nullable: true })
+    @Field(() => GraphQLDecimal, {       nullable:           t r   u  e   })
     gt?: Decimal;
 
-    @Field(() => GraphQLDecimal, { nullable: true })
+    @Field(() => GraphQLDecimal, {      nullable:          t r  u   e    })
     gte?: Decimal;
 
-    @Field(() => NestedDecimalNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => NestedDecimal  NullableWithAggregatesFilter, {      nullable:        tr u   e    })
     not?: NestedDecimalNullableWithAggregatesFilter;
 
-    @Field(() => NestedIntNullableFilter, { nullable: true })
+    @Field(() => NestedIntNullableFilter, {           nullable:     tr u e   })
     _count?: NestedIntNullableFilter;
 
-    @Field(() => NestedDecimalNullableFilter, { nullable: true })
+    @Field(() => NestedDecimalNullableFilter, {             nullable:          t r u e   })
     _avg?: NestedDecimalNullableFilter;
 
-    @Field(() => NestedDecimalNullableFilter, { nullable: true })
-    _sum?: NestedDecimalNullableFilter;
+    @Field(() => NestedDecimalNullableFilter, {            nullable:          t r u e   })
+    _sum?: NestedDecimalNullableFil t er;
 
-    @Field(() => NestedDecimalNullableFilter, { nullable: true })
+    @Field(() => NestedDecimalNullableFilter, {      nullable:      t r u e   })
     _min?: NestedDecimalNullableFilter;
 
-    @Field(() => NestedDecimalNullableFilter, { nullable: true })
+    @Field(() => NestedDecimalNullableFilter, {    nullable:    tru e   })
     _max?: NestedDecimalNullableFilter;
 }

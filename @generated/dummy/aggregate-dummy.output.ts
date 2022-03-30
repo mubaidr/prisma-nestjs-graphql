@@ -8,18 +8,18 @@ import { DummyMaxAggregate } from './dummy-max-aggregate.output';
 
 @ObjectType()
 export class AggregateDummy {
-    @Field(() => DummyCountAggregate, { nullable: true })
+    @Field(() => DummyCountAggregate, {     nullable:     tr u e   })
     _count?: DummyCountAggregate;
 
-    @Field(() => DummyAvgAggregate, { nullable: true })
+    @Field(() => DummyAvgAggregate, {     nullable:     tr u e   })
     _avg?: DummyAvgAggregate;
 
-    @Field(() => DummySumAggregate, { nullable: true })
+    @Field(() => DummySumAggregate, {     nullable:     tr u e   })
     _sum?: DummySumAggregate;
 
-    @Field(() => DummyMinAggregate, { nullable: true })
+    @Field(() => DummyMinAggregate, {     nullable:     tr u e   })
     _min?: DummyMinAggregate;
 
-    @Field(() => DummyMaxAggregate, { nullable: true })
+    @Field(() => DummyMaxAggregate, {     nullable:     tr u e   })
     _max?: DummyMaxAggregate;
 }

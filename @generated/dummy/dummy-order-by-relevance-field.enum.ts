@@ -5,6 +5,7 @@ export enum DummyOrderByRelevanceFieldEnum {
     friends = 'friends',
 }
 
+
 registerEnumType(DummyOrderByRelevanceFieldEnum, {
     name: 'DummyOrderByRelevanceFieldEnum',
     description: undefined,

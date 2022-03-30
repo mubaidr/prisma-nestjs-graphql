@@ -6,21 +6,21 @@ import { StringNullableWithAggregatesFilter } from '../prisma/string-nullable-wi
 
 @InputType()
 export class ProfileScalarWhereWithAggregatesInput {
-    @Field(() => [ProfileScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [ProfileScalarWhereWithAggregatesInput], {      nullable:      tru e     })
     AND?: Array<ProfileScalarWhereWithAggregatesInput>;
 
-    @Field(() => [ProfileScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [ProfileScalarWhereWithAggregatesInput], {      nullable:      tr u e    })
     OR?: Array<ProfileScalarWhereWithAggregatesInput>;
 
-    @Field(() => [ProfileScalarWhereWithAggregatesInput], { nullable: true })
+    @Field(() => [ProfileScalarWhereWithAggregatesInput], {      nullable:      tru  e    })
     NOT?: Array<ProfileScalarWhereWithAggregatesInput>;
 
-    @Field(() => IntWithAggregatesFilter, { nullable: true })
+    @Field(() => IntWithAggregatesFilter, {      nullable:      tr u e    })
     id?: IntWithAggregatesFilter;
 
-    @Field(() => StringWithAggregatesFilter, { nullable: true })
+    @Field(() => StringWithAggregatesFilter, {      nullable:      tru  e    })
     userId?: StringWithAggregatesFilter;
 
-    @Field(() => StringNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => StringNullableWithAggregatesFilter, {      nullable:      t r u e   })
     dummy?: StringNullableWithAggregatesFilter;
 }

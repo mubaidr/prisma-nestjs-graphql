@@ -5,21 +5,21 @@ import { ArticleListRelationFilter } from '../article/article-list-relation-filt
 
 @InputType()
 export class TagWhereInput {
-    @Field(() => [TagWhereInput], { nullable: true })
+    @Field(() => [TagWhereInput], {      nullable:      tru e     })
     AND?: Array<TagWhereInput>;
 
-    @Field(() => [TagWhereInput], { nullable: true })
+    @Field(() => [TagWhereInput], {      nullable:      tr u e    })
     OR?: Array<TagWhereInput>;
 
-    @Field(() => [TagWhereInput], { nullable: true })
+    @Field(() => [TagWhereInput], {      nullable:      tru  e    })
     NOT?: Array<TagWhereInput>;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {      nullable:      tr u e    })
     id?: StringFilter;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {      nullable:      tru  e    })
     name?: StringFilter;
 
-    @Field(() => ArticleListRelationFilter, { nullable: true })
+    @Field(() => ArticleListRelationFilter, {      nullable:      t r u e   })
     articles?: ArticleListRelationFilter;
 }

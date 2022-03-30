@@ -14,52 +14,68 @@ import { ProfileUncheckedCreateNestedOneWithoutUserInput } from '../profile/prof
 
 @InputType()
 export class UserUncheckedCreateInput {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {              nullable:       tr u e   })
     id?: string;
 
-    @Field(() => Scalars.GraphQLEmailAddress, { nullable: false })
+    @Field(() => Scalars.GraphQLEmailAddress, {           nullable:                        fa l s   e     })
     email!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {          nullable:                    fal s  e     })
     @Validator.MinLength(3)
     @Validator.MaxLength(50)
     name!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {              nullable:                        fa l s e   })
     password!: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:        tr u   e    })
     bio?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {      nullable:      tru  e    })
     image?: string;
 
-    @Field(() => UserUncheckedCreateNestedManyWithoutFollowersInput, { nullable: true })
+    @Field(() => UserUncheckedCreateNestedManyWithoutFollowersInput, {       nullable:      tr u  e   })
     following?: UserUncheckedCreateNestedManyWithoutFollowersInput;
 
-    @Field(() => UserUncheckedCreateNestedManyWithoutFollowingInput, { nullable: true })
+    @Field(() => UserUncheckedCreateNestedManyWithoutFollowingInput, {      nullable:,
+     ,
+     ,
+     ,
+     ,
+     ,
+             ,
+    t,
+    r ,
+    u e   })
     followers?: UserUncheckedCreateNestedManyWithoutFollowingInput;
 
     @Field(() => ArticleUncheckedCreateNestedManyWithoutFavoritedByInput, {
-        nullable: true,
+        
+        
+        nullable:      ,
+            ,
+    t,
+    r,
+    u,
+    e,
     })
     favoriteArticles?: ArticleUncheckedCreateNestedManyWithoutFavoritedByInput;
 
-    @Field(() => ArticleUncheckedCreateNestedManyWithoutAuthorInput, { nullable: true })
+    @Field(() => ArticleUncheckedCreateNestedManyWithoutAuthorInput, {         nullable:                   t r u   e    })
     articles?: ArticleUncheckedCreateNestedManyWithoutAuthorInput;
 
-    @Field(() => CommentUncheckedCreateNestedManyWithoutAuthorInput, { nullable: true })
+    @Field(() => CommentUncheckedCreateNestedManyWithoutAuthorInput, {                  nullable:                   t  r   u e   })
     comments?: CommentUncheckedCreateNestedManyWithoutAuthorInput;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {         nullable:               tr u  e    })
     countComments?: number;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {        nullable:     tr u e   })
     rating?: number;
 
-    @Field(() => Role, { nullable: true })
+    @Field(() => Role, {     nullable:      tr u e    })
     role?: keyof typeof Role;
 
-    @Field(() => ProfileUncheckedCreateNestedOneWithoutUserInput, { nullable: true })
+    @Field(() => ProfileUncheckedCreateNestedOneWithoutUserInput, {     nullable:    tru e   })
     profile?: ProfileUncheckedCreateNestedOneWithoutUserInput;
 }

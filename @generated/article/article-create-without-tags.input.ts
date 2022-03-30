@@ -8,39 +8,39 @@ import { CommentCreateNestedManyWithoutArticleInput } from '../comment/comment-c
 
 @InputType()
 export class ArticleCreateWithoutTagsInput {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:          t r  u e    })
     id?: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {          nullable:           fa l s  e       })
     slug!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {          nullable:         fal  s  e     })
     title!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {            nullable:            f a l s   e    })
     description!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {            nullable:                 fals   e    })
     body!: string;
 
     @HideField()
     createdAt?: Date | string;
 
-    @Field(() => Date, { nullable: true })
+    @Field(() => Date, {      nullable:        tru  e    })
     updatedAt?: Date | string;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {       nullable:               tr u e   })
     favoritesCount?: number;
 
-    @Field(() => UserCreateNestedOneWithoutArticlesInput, { nullable: false })
+    @Field(() => UserCreateNestedOneWithoutArticlesInput, {           nullable:                fa l s e   })
     author!: UserCreateNestedOneWithoutArticlesInput;
 
-    @Field(() => UserCreateNestedManyWithoutFavoriteArticlesInput, { nullable: true })
+    @Field(() => UserCreateNestedManyWithoutFavoriteArticlesInput, {            nullable:              tr u   e    })
     favoritedBy?: UserCreateNestedManyWithoutFavoriteArticlesInput;
 
-    @Field(() => CommentCreateNestedManyWithoutArticleInput, { nullable: true })
+    @Field(() => CommentCreateNestedManyWithoutArticleInput, {     nullable:        tr u e    })
     comments?: CommentCreateNestedManyWithoutArticleInput;
 
-    @Field(() => Boolean, { nullable: true })
+    @Field(() => Boolean, {      nullable:      t r u e   })
     active?: boolean;
 }

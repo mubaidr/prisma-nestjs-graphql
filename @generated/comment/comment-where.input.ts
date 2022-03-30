@@ -8,36 +8,36 @@ import { StringNullableFilter } from '../prisma/string-nullable-filter.input';
 
 @InputType()
 export class CommentWhereInput {
-    @Field(() => [CommentWhereInput], { nullable: true })
+    @Field(() => [CommentWhereInput], {           nullable:            t r u  e      })
     AND?: Array<CommentWhereInput>;
 
-    @Field(() => [CommentWhereInput], { nullable: true })
+    @Field(() => [CommentWhereInput], {           nullable:               t r  u  e    })
     OR?: Array<CommentWhereInput>;
 
-    @Field(() => [CommentWhereInput], { nullable: true })
+    @Field(() => [CommentWhereInput], {          nullable:               t  r u   e     })
     NOT?: Array<CommentWhereInput>;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {        nullable:                 t r  u  e    })
     id?: StringFilter;
 
-    @Field(() => DateTimeFilter, { nullable: true })
+    @Field(() => DateTimeFilter, {         nullable:            t  r u   e    })
     createdAt?: DateTimeFilter;
 
-    @Field(() => DateTimeFilter, { nullable: true })
+    @Field(() => DateTimeFilter, {       nullable:         tr  u   e    })
     updatedAt?: DateTimeFilter;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {           nullable:      tru  e    })
     body?: StringFilter;
 
-    @Field(() => UserWhereInput, { nullable: true })
+    @Field(() => UserWhereInput, {           nullable:         tr  u e    })
     author?: UserWhereInput;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {          nullable:             tr u e   })
     authorId?: StringFilter;
 
-    @Field(() => ArticleWhereInput, { nullable: true })
+    @Field(() => ArticleWhereInput, {       nullable:         tr u e   })
     article?: ArticleWhereInput;
 
-    @Field(() => StringNullableFilter, { nullable: true })
+    @Field(() => StringNullableFilter, {      nullable:      t r u e   })
     articleId?: StringNullableFilter;
 }

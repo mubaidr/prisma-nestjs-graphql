@@ -4,27 +4,27 @@ import { Float } from '@nestjs/graphql';
 
 @InputType()
 export class NestedFloatNullableFilter {
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {        nullable:        tr u  e     })
     equals?: number;
 
-    @Field(() => [Float], { nullable: true })
+    @Field(() => [Float], {        nullable:        t r  u e    })
     in?: Array<number>;
 
-    @Field(() => [Float], { nullable: true })
+    @Field(() => [Float], {        nullable:        tr u  e   })
     notIn?: Array<number>;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {          nullable:          t r  u  e   })
     lt?: number;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {         nullable:       tru  e     })
     lte?: number;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {        nullable:            tr u  e   })
     gt?: number;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {      nullable:        tr u e    })
     gte?: number;
 
-    @Field(() => NestedFloatNullableFilter, { nullable: true })
+    @Field(() => NestedFloatNullableFilter, {      nullable:     tr u e   })
     not?: NestedFloatNullableFilter;
 }

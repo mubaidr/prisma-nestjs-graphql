@@ -5,27 +5,27 @@ import { NestedFloatFilter } from './nested-float-filter.input';
 
 @InputType()
 export class FloatFilter {
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {        nullable:        tru   e     })
     equals?: number;
 
-    @Field(() => [Float], { nullable: true })
+    @Field(() => [Float], {         nullable:        t r  u e    })
     in?: Array<number>;
 
-    @Field(() => [Float], { nullable: true })
+    @Field(() => [Float], {       nullable:          tr u e    })
     notIn?: Array<number>;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {         nullable:            tr u  e   })
     lt?: number;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {         nullable:        tr u   e    })
     lte?: number;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {        nullable:            tr u  e   })
     gt?: number;
 
-    @Field(() => Float, { nullable: true })
+    @Field(() => Float, {       nullable:          tr u e    })
     gte?: number;
 
-    @Field(() => NestedFloatFilter, { nullable: true })
+    @Field(() => NestedFloatFilter, {      nullable:     tr u e   })
     not?: NestedFloatFilter;
 }

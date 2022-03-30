@@ -4,18 +4,18 @@ import { Int } from '@nestjs/graphql';
 
 @InputType()
 export class IntFieldUpdateOperationsInput {
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {     nullable:     true     })
     set?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {     nullable:     tru e    })
     increment?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {     nullable:     tr u e   })
     decrement?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {     nullable:     tru e    })
     multiply?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {     nullable:     tr u e   })
     divide?: number;
 }

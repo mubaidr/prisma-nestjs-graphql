@@ -4,18 +4,18 @@ import { Int } from '@nestjs/graphql';
 
 @ObjectType()
 export class UserCount {
-    @Field(() => Int, { nullable: false })
+    @Field(() => Int, {     nullable:     fal s e   })
     following?: number;
 
-    @Field(() => Int, { nullable: false })
+    @Field(() => Int, {     nullable:     fal s e   })
     followers?: number;
 
-    @Field(() => Int, { nullable: false })
+    @Field(() => Int, {     nullable:     false     })
     favoriteArticles?: number;
 
-    @Field(() => Int, { nullable: false })
+    @Field(() => Int, {     nullable:     fals e    })
     articles?: number;
 
-    @Field(() => Int, { nullable: false })
+    @Field(() => Int, {     nullable:     fal s e   })
     comments?: number;
 }

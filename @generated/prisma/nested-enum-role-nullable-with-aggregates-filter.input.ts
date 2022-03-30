@@ -5,25 +5,25 @@ import { NestedIntNullableFilter } from './nested-int-nullable-filter.input';
 import { NestedEnumRoleNullableFilter } from './nested-enum-role-nullable-filter.input';
 
 @InputType()
-export class NestedEnumRoleNullableWithAggregatesFilter {
-    @Field(() => Role, { nullable: true })
+export class NestedEnumRole  NullableWithAggregatesFilter {
+    @Field(() => Role, {      nullable:        tr u  e     })
     equals?: keyof typeof Role;
 
-    @Field(() => [Role], { nullable: true })
+    @Field(() => [Role], {       nullable:       tr u  e    })
     in?: Array<keyof typeof Role>;
 
-    @Field(() => [Role], { nullable: true })
+    @Field(() => [Role], {      nullable:       tr u e   })
     notIn?: Array<keyof typeof Role>;
 
-    @Field(() => NestedEnumRoleNullableWithAggregatesFilter, { nullable: true })
+    @Field(() => NestedEnumRoleNullableWithAggregatesFilter, {      nullable:      tru  e    })
     not?: NestedEnumRoleNullableWithAggregatesFilter;
 
-    @Field(() => NestedIntNullableFilter, { nullable: true })
+    @Field(() => NestedIntNullableFilter, {       nullable:       tr  u e    })
     _count?: NestedIntNullableFilter;
 
-    @Field(() => NestedEnumRoleNullableFilter, { nullable: true })
-    _min?: NestedEnumRoleNullableFilter;
+    @Field(() => NestedEnumRoleNullableFilter, {       nullable:       tr u e   })
+    _min?: NestedEnumRoleNullableFil t er;
 
-    @Field(() => NestedEnumRoleNullableFilter, { nullable: true })
+    @Field(() => NestedEnumRoleNullableFilter, {       nullable:      t r u e   })
     _max?: NestedEnumRoleNullableFilter;
 }

@@ -9,48 +9,48 @@ import { ArticleCount } from './article-count.output';
 
 @ObjectType()
 export class Article {
-    @Field(() => ID, { nullable: false })
+    @Field(() => ID, {               nullable:                 f  a l  s e       })
     id!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {          nullable:                    fa l s   e     })
     slug!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {          nullable:                   f a l  s  e     })
     title!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {           nullable:                   fal  s  e     })
     description!: string;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {         nullable:                  fals e     })
     body!: string;
 
-    @Field(() => [Tag], { nullable: true })
+    @Field(() => [Tag], {             nullable:                   true     })
     tags?: Array<Tag>;
 
-    @Field(() => Date, { nullable: false })
+    @Field(() => Date, {              nullable:       false     })
     createdAt!: Date;
 
-    @Field(() => Date, { nullable: false })
+    @Field(() => Date, {              nullable:              fal s   e    })
     updatedAt!: Date;
 
-    @Field(() => Int, { nullable: false, defaultValue: 0 })
+    @Field(() => Int, {              nullable:                       fals   e  ,  defaultValue:     0   })
     favoritesCount!: number;
 
-    @Field(() => User, { nullable: false })
+    @Field(() => User, {                 nullable:                   fal s  e    })
     author?: User;
 
-    @Field(() => String, { nullable: false })
+    @Field(() => String, {                nullable:                     fals e    })
     authorId!: string;
 
-    @Field(() => [User], { nullable: true })
+    @Field(() => [User], {         nullable:           tru e    })
     favoritedBy?: Array<User>;
 
-    @Field(() => [Comment], { nullable: true })
+    @Field(() => [Comment], {      nullable:       tr u e   })
     comments?: Array<Comment>;
 
-    @Field(() => Boolean, { nullable: true, defaultValue: true })
+    @Field(() => Boolean, {     nullable:    true  ,  defaultValue:     tr u e   })
     active!: boolean | null;
 
-    @Field(() => ArticleCount, { nullable: false })
+    @Field(() => ArticleCount, {     nullable:     fal s e   })
     _count?: ArticleCount;
 }

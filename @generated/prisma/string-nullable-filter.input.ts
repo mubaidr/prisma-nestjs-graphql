@@ -5,42 +5,42 @@ import { NestedStringNullableFilter } from './nested-string-nullable-filter.inpu
 
 @InputType()
 export class StringNullableFilter {
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:          t r u e   })
     equals?: string;
 
-    @Field(() => [String], { nullable: true })
+    @Field(() => [String], {              nullable:              t r u  e    })
     in?: Array<string>;
 
-    @Field(() => [String], { nullable: true })
+    @Field(() => [String], {        nullable:            t  r u  e   })
     notIn?: Array<string>;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:                    tr u  e   })
     lt?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:                t  r  u   e     })
     lte?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {           nullable:                    t r  u  e   })
     gt?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {             nullable:           t r u    e     })
     gte?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {             nullable:                 t r u   e    })
     contains?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {              nullable:                   t  r  u  e   })
     startsWith?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {            nullable:                tr u   e    })
     endsWith?: string;
 
-    @Field(() => String, { nullable: true })
+    @Field(() => String, {       nullable:        tr u e    })
     search?: string;
 
-    @Field(() => QueryMode, { nullable: true })
+    @Field(() => QueryMode, {     nullable:      tr u e    })
     mode?: keyof typeof QueryMode;
 
-    @Field(() => NestedStringNullableFilter, { nullable: true })
+    @Field(() => NestedStringNullableFilter, {     nullable:    tru e   })
     not?: NestedStringNullableFilter;
 }

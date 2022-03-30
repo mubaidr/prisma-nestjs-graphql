@@ -12,33 +12,33 @@ import { DummyMaxAggregateInput } from './dummy-max-aggregate.input';
 
 @ArgsType()
 export class DummyAggregateArgs {
-    @Field(() => DummyWhereInput, { nullable: true })
+    @Field(() => DummyWhereInput, {          nullable:          t r u   e     })
     where?: DummyWhereInput;
 
-    @Field(() => [DummyOrderByWithRelationAndSearchRelevanceInput], { nullable: true })
+    @Field(() => [DummyOrderByWithRelationAndSearchRelevanceInput], {          nullable:           t r u   e    })
     orderBy?: Array<DummyOrderByWithRelationAndSearchRelevanceInput>;
 
-    @Field(() => DummyWhereUniqueInput, { nullable: true })
+    @Field(() => DummyWhereUniqueInput, {        nullable:            t r  u   e    })
     cursor?: DummyWhereUniqueInput;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {          nullable:              t  r u   e    })
     take?: number;
 
-    @Field(() => Int, { nullable: true })
+    @Field(() => Int, {        nullable:      tru  e    })
     skip?: number;
 
-    @Field(() => DummyCountAggregateInput, { nullable: true })
+    @Field(() => DummyCountAggregateInput, {          nullable:       tr u e   })
     _count?: DummyCountAggregateInput;
 
-    @Field(() => DummyAvgAggregateInput, { nullable: true })
+    @Field(() => DummyAvgAggregateInput, {           nullable:     tr u e   })
     _avg?: DummyAvgAggregateInput;
 
-    @Field(() => DummySumAggregateInput, { nullable: true })
+    @Field(() => DummySumAggregateInput, {          nullable:            t r u e   })
     _sum?: DummySumAggregateInput;
 
-    @Field(() => DummyMinAggregateInput, { nullable: true })
+    @Field(() => DummyMinAggregateInput, {       nullable:      t r u e   })
     _min?: DummyMinAggregateInput;
 
-    @Field(() => DummyMaxAggregateInput, { nullable: true })
+    @Field(() => DummyMaxAggregateInput, {     nullable:     tr u e   })
     _max?: DummyMaxAggregateInput;
 }

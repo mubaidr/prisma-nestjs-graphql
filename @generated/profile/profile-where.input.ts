@@ -7,24 +7,24 @@ import { StringNullableFilter } from '../prisma/string-nullable-filter.input';
 
 @InputType()
 export class ProfileWhereInput {
-    @Field(() => [ProfileWhereInput], { nullable: true })
+    @Field(() => [ProfileWhereInput], {       nullable:       tru e      })
     AND?: Array<ProfileWhereInput>;
 
-    @Field(() => [ProfileWhereInput], { nullable: true })
+    @Field(() => [ProfileWhereInput], {       nullable:       tr u  e    })
     OR?: Array<ProfileWhereInput>;
 
-    @Field(() => [ProfileWhereInput], { nullable: true })
+    @Field(() => [ProfileWhereInput], {       nullable:       tru   e    })
     NOT?: Array<ProfileWhereInput>;
 
-    @Field(() => IntFilter, { nullable: true })
+    @Field(() => IntFilter, {       nullable:       tr u  e    })
     id?: IntFilter;
 
-    @Field(() => UserWhereInput, { nullable: true })
+    @Field(() => UserWhereInput, {       nullable:        tr  u e   })
     user?: UserWhereInput;
 
-    @Field(() => StringFilter, { nullable: true })
+    @Field(() => StringFilter, {        nullable:       tr u  e    })
     userId?: StringFilter;
 
-    @Field(() => StringNullableFilter, { nullable: true })
+    @Field(() => StringNullableFilter, {      nullable:      t r u e   })
     dummy?: StringNullableFilter;
 }

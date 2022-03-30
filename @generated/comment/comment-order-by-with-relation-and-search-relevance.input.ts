@@ -7,30 +7,30 @@ import { CommentOrderByRelevanceInput } from './comment-order-by-relevance.input
 
 @InputType()
 export class CommentOrderByWithRelationAndSearchRelevanceInput {
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {        nullable:        t r   u e     })
     id?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {         nullable:         t r u   e    })
     createdAt?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {         nullable:         t r u   e    })
     updatedAt?: keyof typeof SortOrder;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {        nullable:       tru   e    })
     body?: keyof typeof SortOrder;
 
-    @Field(() => UserOrderByWithRelationAndSearchRelevanceInput, { nullable: true })
+    @Field(() => UserOrderByWithRelationAndSearchRelevanceInput, {       nullable:       tr u e   })
     author?: UserOrderByWithRelationAndSearchRelevanceInput;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {       nullable:       tr u e   })
     authorId?: keyof typeof SortOrder;
 
-    @Field(() => ArticleOrderByWithRelationAndSearchRelevanceInput, { nullable: true })
+    @Field(() => ArticleOrderByWithRelationAndSearchRelevanceInput, {          nullable:              tr  u e   })
     article?: ArticleOrderByWithRelationAndSearchRelevanceInput;
 
-    @Field(() => SortOrder, { nullable: true })
+    @Field(() => SortOrder, {         nullable:         tr u  e    })
     articleId?: keyof typeof SortOrder;
 
-    @Field(() => CommentOrderByRelevanceInput, { nullable: true })
+    @Field(() => CommentOrderByRelevanceInput, {      nullable:      t r u e   })
     _relevance?: CommentOrderByRelevanceInput;
 }
